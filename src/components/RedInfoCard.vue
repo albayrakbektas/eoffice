@@ -1,13 +1,18 @@
 <script>
 export default {
-name: "RedInfoCard"
-}
+  name: "RedInfoCard",
+};
 </script>
 
 <template>
-  $END$
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">
+        With supporting text below as a natural lead-in to additional content.
+      </p>
+    </div>
+  </div>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

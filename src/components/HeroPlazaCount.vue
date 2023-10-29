@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: "AnimateExamp",
+  name: "HeroPlazaCount",
   data() {
     return {
       textClass: "",

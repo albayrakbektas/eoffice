@@ -5,12 +5,15 @@
     style="height: 50vh; background: #263238 !important"
   >
     <div :class="textClass" class="w-50 px-5 ms-5">
-      <h1 class="text-light">58 A+ Plazada Prestijli Ofisler</h1>
+      <h1 class="text-light">
+        Her Türlü Etkinlikleriniz İçin Mekanları Hazırladık
+      </h1>
       <p class="text-light">
-        Esnek Kiralama Modeli ile, saatlik, günlük, haftalık ya da aylık
-        kiralamalar yapabilir, Türkiyen'nin en prestijli lokasyonlarında,
-        işinize uygun toplantı odası, seminer salonu, hazır ofis ya da ortak
-        ofiste çalışma masası imkanlarından faydalanabilirsiniz.
+        Her Türlü Etkinlikleriniz İçin Mekanları Hazırladık Eğitim, Lansman,
+        Kokteyl organizasyonları, sosyal buluşma ve kutlamalarınız için eOfis’in
+        etkinlik alanlarını, eOfis üyesi olmanın ayrıcalığı ile
+        kullanabilirsiniz. 120'den fazla toplantı ve seminer salonu, her türlü
+        etkinliğiniz için emrinizde.
       </p>
     </div>
     <div :class="imageClass" class="w-50">
@@ -26,7 +29,7 @@
 
 <script>
 export default {
-  name: "HeroPlazaCount",
+  name: "HeroActivityPlace",
   data() {
     return {
       textClass: "",

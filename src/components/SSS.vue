@@ -1,13 +1,16 @@
 <script>
 export default {
-name: "SSS"
-}
+  name: "SSS",
+};
 </script>
 
 <template>
-  $END$
+  <div></div>
 </template>
 
 <style scoped lang="scss">
-
+div {
+  height: 100vh;
+  background: black;
+}
 </style>
