@@ -22,6 +22,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.h3-responsive {
+  font-size: 135%;
+}
+@media (min-width: 576px) {
+  .h3-responsive,
+  .h4-responsive,
+  .h5-responsive {
+    font-size: 125%;
+  }
+}
+@media (min-width: 768px) {
+  .h3-responsive {
+    font-size: 140%;
+  }
+}
 </style>
 <script>
 import NavBar from "@/components/NavBar.vue";

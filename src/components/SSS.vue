@@ -10,7 +10,7 @@ export default {
 
 <style scoped lang="scss">
 div {
-  height: 100vh;
+  //height: 100vh;
   background: black;
 }
 </style>
