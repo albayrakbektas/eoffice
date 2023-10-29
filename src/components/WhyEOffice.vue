@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container m-5">
+  <div class="container">
     <h2 class="mb-3 mb-lg-5 h3-responsive font-weight-normal text-center">
       Neden eOfis?
     </h2>

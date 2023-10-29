@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <NavBar />
+    <NavBarDene />
     <router-view />
+    <TeklfAlButonu />
   </div>
 </template>
 
@@ -18,6 +19,8 @@ body {
   font-size: 0.9rem;
 }
 #app {
+  overflow-x: hidden;
+  max-width: 100vw;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,10 +43,11 @@ body {
 }
 </style>
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavBarDene from "@/components/NavBarDene.vue";
+import TeklfAlButonu from "@/components/TeklfAlButonu.vue";
 export default {
   name: "App",
-  components: { NavBar },
+  components: { TeklfAlButonu, NavBarDene },
   created() {
     this.$store.dispatch("checkScreenSize");
     window.addEventListener("resize", () => {
