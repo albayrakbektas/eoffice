@@ -22,19 +22,19 @@ export default {
             sunuyor
           </p>
           <p>
-            <a href="//www.eofis.com.tr/lokasyonlar"
+            <a href="/lokasyonlar"
               ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Tüm
               Lokasyonlar</a
             >
           </p>
           <p>
-            <a href="//www.eofis.com.tr/ozel-ofisler"
+            <a href="/ozel-ofisler"
               ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Size Özel
               Ofisler</a
             >
           </p>
           <p>
-            <a href="//www.eofis.com.tr/bloglar"
+            <a href="/bloglar"
               ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Blog
               Yazıları</a
             >
@@ -47,11 +47,11 @@ export default {
             class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
             style="width: 60px"
           />
-          <p><a href="//www.eofis.com.tr/hakkimizda">Hakkımızda</a></p>
-          <p><a href="//www.eofis.com.tr/kariyer">Kariyer</a></p>
-          <p><a href="//www.eofis.com.tr/ortaklik">Ortaklık</a></p>
+          <p><a href="/hakkimizda">Hakkımızda</a></p>
+          <p><a href="/kariyer">Kariyer</a></p>
+          <p><a href="/ortaklik">Ortaklık</a></p>
           <p>
-            <a href="//www.eofis.com.tr/sirket-kurulusu">Şirket Kuruluşu</a>
+            <a href="/sirket-kurulusu">Şirket Kuruluşu</a>
           </p>
         </div>
 
@@ -61,14 +61,12 @@ export default {
             class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
             style="width: 60px"
           />
-          <p><a href="//www.eofis.com.tr/iletisim">İletişim</a></p>
-          <p><a href="//www.eofis.com.tr/sss">SSS</a></p>
+          <p><a href="/iletisim">İletişim</a></p>
+          <p><a href="/sss">SSS</a></p>
           <p>
-            <a href="//www.eofis.com.tr/kullanim-kosullari"
-              >Kullanım Koşulları</a
-            >
+            <a href="/kullanim-kosullari">Kullanım Koşulları</a>
           </p>
-          <p><a href="//www.eofis.com.tr/gizlilik">Gizlilik</a></p>
+          <p><a href="/gizlilik">Gizlilik</a></p>
         </div>
 
         <div class="col-12 col-md-4 col-lg-2 mx-auto mb-md-0 mb-4">
@@ -125,7 +123,7 @@ export default {
             </div>
             <div class="mb-0">
               © 2023 Copyright
-              <a href="//www.eofis.com.tr/">Eofis Ofis Hizmetleri</a>
+              <a href="/">Eofis Ofis Hizmetleri</a>
             </div>
           </div>
 
@@ -136,7 +134,7 @@ export default {
           <!--              <a href="//orfs.com.tr" target="_blank"-->
           <!--                ><img-->
           <!--                  style="height: 30px"-->
-          <!--                  src="//www.eofis.com.tr/ass/img/svg/orfs_eofis.svg"-->
+          <!--                  src="/ass/img/svg/orfs_eofis.svg"-->
           <!--                  alt="Orfs"-->
           <!--                  title="Design and Development by Orfs"-->
           <!--                  width="266"-->

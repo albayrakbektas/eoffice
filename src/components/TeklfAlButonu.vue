@@ -1,11 +1,16 @@
 <script>
 export default {
   name: "TeklfAlButonu",
+  computed: {
+    isMobile() {
+      return this.$store.getters.isMobile;
+    },
+  },
 };
 </script>
 
 <template>
-  <div>
+  <div v-if="isMobile">
     <!-- Button trigger modal -->
     <button
       type="button"

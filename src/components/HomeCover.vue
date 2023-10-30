@@ -1,6 +1,5 @@
 <script>
 import GreyInfoCard from "@/components/GreyInfoCard.vue";
-import BCarousel from "@/components/BCarousel.vue";
 
 export default {
   name: "HomeCover",
@@ -9,7 +8,7 @@ export default {
       return this.$store.getters.isMobile;
     },
   },
-  components: { BCarousel, GreyInfoCard },
+  components: { GreyInfoCard },
 };
 </script>
 
@@ -31,9 +30,7 @@ export default {
         v-if="!isMobile"
         class="main-bot d-flex justify-content-between"
         style="max-height: 45vh; width: 65vw"
-      >
-        <BCarousel />
-      </div>
+      ></div>
       <div class="grey-card-container w-100 row mx-auto" v-if="isMobile">
         <div class="col-3">
           <GreyInfoCard />
@@ -85,14 +82,14 @@ export default {
 .main-bot {
   position: absolute;
   left: 25%;
-  bottom: 0;
+  top: 80%;
   margin: 0 auto;
-  translate: -25% 0;
+  translate: -25% -80%;
   overflow: hidden;
 }
 .grey-card-container {
   position: absolute;
-  top: 37.5%;
+  top: 85%;
   left: 0;
   z-index: 9;
   .col-3 {

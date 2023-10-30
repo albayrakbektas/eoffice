@@ -3,6 +3,7 @@
     <NavBarDene />
     <router-view />
     <TeklfAlButonu />
+    <HomeFooter />
   </div>
 </template>
 
@@ -45,9 +46,10 @@ body {
 <script>
 import NavBarDene from "@/components/NavBarDene.vue";
 import TeklfAlButonu from "@/components/TeklfAlButonu.vue";
+import HomeFooter from "@/components/HomeFooter.vue";
 export default {
   name: "App",
-  components: { TeklfAlButonu, NavBarDene },
+  components: { HomeFooter, TeklfAlButonu, NavBarDene },
   created() {
     this.$store.dispatch("checkScreenSize");
     window.addEventListener("resize", () => {

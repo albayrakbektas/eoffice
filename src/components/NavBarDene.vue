@@ -13,7 +13,7 @@ export default {
   <nav class="navbar">
     <div class="container-fluid">
       <div class="collapse navbar-collapse d-flex">
-        <a class="navbar-brand col-3 col-lg-3 me-0" href="#">Centered nav</a>
+        <a class="navbar-brand col-3 col-lg-3 me-0" href="/">Centered nav</a>
         <ul
           v-if="!isMobile"
           class="navbar-nav col-9 col-lg-9 justify-content-lg-center"
@@ -27,6 +27,23 @@ export default {
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item d-none d-lg-block desktop_call">
+            <a
+              class="nav-link callusbuton waves-effect waves-light"
+              href="tel:444-34-80"
+            >
+              <div class="dc_img">
+                <img
+                  src="//www.eofis.com.tr/ass/img/svg/phone.svg"
+                  alt="Hemen Ara"
+                />
+              </div>
+              <div class="dc_oth">
+                <div class="dc_txt">HEMEN ARA</div>
+                <div class="dc_nmr">444 <span>34 80</span></div>
+              </div>
+            </a>
           </li>
         </ul>
         <button
@@ -107,5 +124,17 @@ export default {
 .nav-link {
   padding-right: var(--bs-navbar-nav-link-padding-x);
   padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+.dc_img {
+  img {
+    height: 40px;
+    transition: all 0.5s;
+  }
+}
+.callusbuton {
+  display: flex;
+}
+ul {
+  align-items: center;
 }
 </style>
