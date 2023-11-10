@@ -13,7 +13,9 @@ export default {
   <nav class="navbar">
     <div class="container-fluid">
       <div class="collapse navbar-collapse d-flex">
-        <a class="navbar-brand col-3 col-lg-3 me-0" href="/">Centered nav</a>
+        <a class="navbar-brand col-3 col-lg-3 me-0" href="/"
+          >AkdenizBusinessCenter</a
+        >
         <ul
           v-if="!isMobile"
           class="navbar-nav col-9 col-lg-9 justify-content-lg-center"

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <NavBarDene />
-    <router-view />
-    <TeklfAlButonu />
-    <HomeFooter />
+    <WelcomePage />
+    <NavBarDene style="display: none" />
+    <router-view style="display: none" />
+    <TeklfAlButonu style="display: none" />
+    <HomeFooter style="display: none" />
   </div>
 </template>
 
@@ -47,9 +48,10 @@ body {
 import NavBarDene from "@/components/NavBarDene.vue";
 import TeklfAlButonu from "@/components/TeklfAlButonu.vue";
 import HomeFooter from "@/components/HomeFooter.vue";
+import WelcomePage from "@/components/WelcomePage.vue";
 export default {
   name: "App",
-  components: { HomeFooter, TeklfAlButonu, NavBarDene },
+  components: { WelcomePage, HomeFooter, TeklfAlButonu, NavBarDene },
   created() {
     this.$store.dispatch("checkScreenSize");
     window.addEventListener("resize", () => {
