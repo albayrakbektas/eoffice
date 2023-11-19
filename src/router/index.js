@@ -39,6 +39,35 @@ const routes = [
         /* webpackChunkName: "hazir-ofis" */ "../views/ReadOfficeView.vue"
       ),
   },
+  {
+    path: "/sanal-ofis",
+    name: "sanal-ofis",
+    // route level code-splitting
+    // this generates a separate chunk (sanal-ofis.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "sanal-ofis" */ "../views/VirtualOfficeView.vue"
+      ),
+  },
+  {
+    path: "/co-working",
+    name: "co-working",
+    // route level code-splitting
+    // this generates a separate chunk (co-working.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "co-working" */ "../views/CoWorkingView.vue"),
+  },
+  {
+    path: "/fiyatlar",
+    name: "fiyatlar",
+    // route level code-splitting
+    // this generates a separate chunk (fiyatlar.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "fiyatlar" */ "../views/PricesView.vue"),
+  },
 ];
 
 const router = new VueRouter({

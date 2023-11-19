@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "ReadOfficeView",
+  name: "CoWorkingView",
   components: {},
   data() {
     return {
@@ -21,10 +21,10 @@ export default {
       return this.$store.getters.isMobile;
     },
     advantages() {
-      return this.$t("flexibleOffices.advantages");
+      return this.$t("coWorkingOffices.advantages");
     },
     services() {
-      return this.$t("flexibleOffices.services.list");
+      return this.$t("coWorkingOffices.services.list");
     },
     firstHalf() {
       const middle = Math.ceil(this.services.length / 2);
@@ -78,13 +78,13 @@ export default {
             <h1
               class="slogan_1 font-weight-bold mb-1 mb-lg-2 text-center text-md-start"
             >
-              {{ $t("flexibleOffices.title") }}
+              {{ $t("coWorkingOffices.title") }}
             </h1>
             <!--            <div class="slogan_2 mb-2 mb-lg-3">-->
             <!--              İhtiyacınıza Yönelik Esnek Ofis Çözümleri-->
             <!--            </div>-->
             <p class="slogan_3 mb-1 mb-lg-2 fw-bold text-center text-md-start">
-              {{ $t("flexibleOffices.subtitle") }}
+              {{ $t("coWorkingOffices.subtitle") }}
             </p>
           </div>
         </div>
@@ -118,10 +118,10 @@ export default {
                 <!-- services -->
                 <div class="col-12 my-3 mb-0">
                   <h2 class="mb-2 text-center text-md-start">
-                    {{ $t("flexibleOffices.services.name") }}
+                    {{ $t("coWorkingOffices.services.name") }}
                   </h2>
                   <h5 class="text-center text-md-start">
-                    {{ $t("flexibleOffices.services.title") }}
+                    {{ $t("coWorkingOffices.services.title") }}
                   </h5>
                 </div>
                 <div class="col-12 col-lg-6 mb-md-4">
@@ -183,14 +183,14 @@ export default {
                 </div>
                 <!-- faq -->
                 <div class="col-12 my-3 mb-md-4">
-                  <h2>{{ $t("flexibleOffices.faq.name") }}</h2>
+                  <h2>{{ $t("coWorkingOffices.faq.name") }}</h2>
                   <div
                     class="accordion accordion-flush"
                     id="accordionFlushExample"
                   >
                     <div
                       class="accordion-item"
-                      v-for="(faq, index) in $t('flexibleOffices.faq.list')"
+                      v-for="(faq, index) in $t('coWorkingOffices.faq.list')"
                       :key="index"
                     >
                       <h2

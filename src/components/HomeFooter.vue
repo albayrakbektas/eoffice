@@ -1,13 +1,20 @@
 <script>
 export default {
   name: "HomeFooter",
+  computed: {},
+  methods: {
+    footerOffset() {
+      let footer = this.$refs.footer;
+      console.log(footer.getBoundingClientRect().bottom);
+      return footer.getBoundingClientRect().top;
+    },
+  },
 };
 </script>
 
 <template>
-  <footer class="page-footer font-small">
+  <footer class="page-footer font-small" ref="footer">
     <hr class="mt-0" />
-
     <div class="container text-start text-md-left mt-5">
       <div class="row mt-3">
         <div class="col-12 col-md-4 col-lg-4 mx-auto mb-4">

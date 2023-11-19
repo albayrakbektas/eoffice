@@ -1,0 +1,142 @@
+{
+  "flexibleOffices": {
+    "title": "Hazır Ofis",
+    "subtitle": "İhtiyacınıza Yönelik Esnek Ofis Çözümleri Akdeniz Business center hazır ofis üyeliğiyle Mersin en prestijli noktalarında sizin için hazırlanan modern ofislerde verimli bir şekilde çalışıp işlerinizi halledin, geri kalan her şeyi bize bırakın!",
+    "advantages": {
+      "title": "Hazır Ofis Üyeliğinin Avantajları",
+      "subtitle": "Ofisiniz Nerede İsterseniz Orada!",
+      "list": [
+        "Dekorasyon, mobilya, stopaj, altyapı maliyetleri gibi ofisinizle ilgili hizmetler için tek bir fatura ödersiniz.",
+        "Şirketiniz geliştikçe ofisinizi de ihtiyacınız olan süreye ve mekâna göre genişletebilirsiniz.",
+        "Akdeniz Business Center’lardaki ortak çalışma alanlarını ve toplantı odalarını üyeliğiniz kapsamında kullanabilirsiniz.",
+        "Yalnız Çalışmayın! Akdeniz Business Center üyeleri ile aynı çalışma ortamını paylaşır, her sektörden profesyonel ile networking yapabilirsiniz.",
+        "Her İhtiyacınız Elinizin Altında! Sekreterlik, otopark, ikramlar, internet, kargo karşılama gibi hizmetlere kolayca ulaşabilirsiniz."
+      ]
+    },
+    "services": {
+      "name": "Hizmetler",
+      "title": "Kolayca Çalışmaya Başlaman İçin Workinton’da İhtiyacın Olan Her Şey Var!",
+      "list": ["7/24 Hizmet" , "Dinlenme Alanı" , "Etkinlik" , "Güvenlik" , "Hızlı İnternet" , "İkramlar" , "Kargo" , "Toplantı Odası",
+        "Yaygın Lokasyon" , "Kolay Ulaşım"]
+    },
+    "faq": {
+      "name": "Sık Sorulan Sorular",
+      "title": "",
+      "list": [
+        {
+          "question": "Hazır Ofis Nedir?",
+          "answer": "Dilediğiniz metrekarede ve kişi sayınıza göre farklı büyüklüklerde olan içerisinde aynı gün çalışmaya başlayabileceğiniz tüm eşyaların yer aldığı üyelik modelidir. Sizin için tüm operasyonel süreçleri Workinton’un deneyimli ekibi tarafından yürütülür."
+        },
+        {
+          "question": "Fatura Ve Ödeme Süreçleri Nasıl Oluyor?",
+          "answer": "Faturalandırma ve ödemeler aylık olarak gerçekleştirilmektedir. Ödemeleri EFT/ havale yöntemiyle\nyapabilirsiniz."
+        },
+        {
+          "question": "Minimum Ne Kadar Süre Ile Kiralayabilirim?",
+          "answer": "Hazır ofis üyeliklerimizin süresini ihtiyacınıza göre belirleyebilirsiniz."
+        },
+        {
+          "question": "Hazır Ofislerde Depozito Var Mı?",
+          "answer": "Hazır ofis üyeliğinin başlaması için 1 aylık üyelik bedeli kadar teminat bedeli alıyoruz."
+        },
+        {
+          "question": "Hazır Ofis Üyeleri Toplantı Odası Kullanabilir Mi?",
+          "answer": "Hazır ofis üyeleri ofislerinin olduğu 8 kişiye kadar ayda 8 saat toplantı hakkı bulunuyor. Ek olarak hazır ofis üyelerine özel toplantı yapacakları ekstra toplantılar için %10 indirim hakkı bulunuyor. Daha yüksek katılımlı toplantılar düzenlemek isterseniz satış yöneticiniz organizasyon için her zaman\nyanınızda."
+        },
+        {
+          "question": "Hazır Ofisler Ortak Çalışma Alanlarını Kullanabiliyor Mu?",
+          "answer": "Hazır ofis üyelerinin tüm şubelerde geçerli olacak şekilde aylık 40 saat ortak çalışma alanını kullanma hakları bulunuyor. Ek olarak kullanım için üyelik almak isterlerse %10 indirim hakkınız bulunuyor."
+        },
+        {
+          "question": "Hazır Ofis Üyeleri Misafir Davet Edebilir Mi?",
+          "answer": "Hazır ofis üyeleri kendi ofislerinde misafir etmek koşuluyla diledikleri sürede misafirlerini ağırlayabilirler. Ancak misafirin düzenli olarak gelip çalışmaya başlaması durumunda kişi sayısı olarak eklenmektedir."
+        }
+      ]
+    }
+  },
+  "virtualOffices": {
+    "title": "Sanal Ofis",
+    "subtitle": "Resmi işlemler için ihtiyacınız olan adresi; Mersin’de gösterebilir, işlemlerinize en uygun vergi dairesini tercih edebilirsiniz.",
+    "advantages": {
+      "title": "Sanal Ofis Üyeliğinin Avantajları",
+      "subtitle": "Akdeniz Business Center Sanal Ofis üyeliğinizle",
+      "list": [
+        "Çağrılarınız şirket isminizle İngilizce veya Türkçe karşılanır.",
+        "Evrak ve kargolarınız sizin için teslim alınır.",
+        "Toplantılarınızı, konforlu ve verimli bir şekilde, gün boyu ikramlarla yapabilirsiniz.",
+        "İthalat , ihracat ve gümrük müşavirliği faydalanabilirsiniz.",
+        "Pazarlama , Pazar giriş ve ihracat müşavirliği faydalanabilirsiniz."
+      ]
+    },
+    "services": {
+      "name": "Hizmetler",
+      "title": "Kolayca Çalışmaya Başlaman İçin Workinton’da İhtiyacın Olan Her Şey Var!",
+      "list": ["Etkinlik" , "Kargo" ,  "Güvenlik" , "Kolay Ulaşım" , "Sekreterlik" , "Toplantı Odası" , "Yaygın Lokasyon"]
+    },
+    "faq": {
+      "name": "Sık Sorulan Sorular",
+      "title": "",
+      "list": [
+        {
+          "question": "Sanal Ofis Nedir?",
+          "answer": "Sadece iş kurmak fiziksel yere ihtiyacı olmadan yasal bir adrese imkanı sağlayan üyelik modeli. Yasal\nadres olarak seçilen Workinton şubesini şirketiniz için yasal adres olarak gösterebilirsiniz. Şirket\nadresinizin olduğu şubede kargolarınız sizin adınıza teslim alınır ve deneyimli call center ekibimizle\nçağrılarınız Türkçe ve İngilizce olarak karşılanır."
+        },
+        {
+          "question": "Sanal Ofis Kurulumu İçin Gerekli Evraklar",
+          "answer": "Yeni şirket kuruluşlarında kimliğiniz adres taşıma işlemlerinde ise güncel vergi levhası, imza sirküleri\nve ticaret sicil gazeteniz gereklidir."
+        },
+        {
+          "question": "Vergi Dairesi Yoklaması Nedir? Yoklamayı Kaçırırsam Ne Olur?",
+          "answer": "Vergi dairesi yoklaması şirket kurma sürecinin son aşamasıdır. İmzalanan sözleşmenin vergi dairesine\nteslim edilmesinden sonra adres teyidi için üyenin bağlı olduğu lokasyona vergi memurunun kontrole\ngelmesiyle birlikte üye adreste olduğunu teyit eder ve açılış işlemi tamamlanır. Üyenin yoklamayı\nkaçırması halinde üye Vergi Dairesinden yeniden yoklamaya gelinmesi için randevu talebinde\nbulunabilir."
+        },
+        {
+          "question": "Çağrı Karşılama (Sekreterlik Hizmeti) Nedir?",
+          "answer": "Sadece Workinton Çağrı Karşılama hizmetinden yararlanmak isterseniz ek hizmet olarak şirketiniz için\nçağrı karşılama hizmeti alabilirsiniz. Şirketinize özel bir numara tahsis edilir, gelen çağrılar şirket\nisminizle karşılanır. Tercihinize göre size telefonla ya da maille aktarılır."
+        }
+      ]
+    }
+  },
+  "coWorkingOffices": {
+    "title": "Coworking",
+    "subtitle": "Dilediğin Zaman Dilediğin Yerde Çalış. Akdeniz Business Center coworking alanlarında, dilediğiniz masada, tam donanımlı bir ofis\nkonforunda çalışırken ara verip kafanızı kaldırdığınızda sayısız bağlantı ve iş birliği fırsatıyla\nkarşılaşırsınız.",
+    "advantages": {
+      "title": "Coworking Üyeliğinin Avantajları",
+      "subtitle": "Akdeniz Business Center’de esnek olan tek şey tabii ki çalışma koltuklarımız ve saatlerimiz değil.\nİhtiyacınıza en uygun üyelik modelini seçin ve çalışmaya başlayın!",
+      "list": [
+        "Yıl boyunca satın aldığınız saatleri dilediğiniz zaman, dilediğiniz Workinton’da kullanırsınız.",
+        "Dilediğiniz Workinton’da, istediğiniz masada kaç ay isterseniz o kadar çalışırsınız.",
+        "En az bir ay çalışmayı tercih ettiğiniz masayı seçer ve kendinize ayırırsınız. Gün sonunda bilgisayarınızı\nve kişisel düzeninizi istediğiniz gibi bırakırsınız. Özel bir çalışma koltuğunuz ve sadece size ait kiralık\ndolabınız olur.",
+        "İthalat , ihracat ve gümrük müşavirliği faydalanabilirsiniz.",
+        "Pazarlama , Pazar giriş ve ihracat müşavirliği faydalanabilirsiniz."
+      ]
+    },
+    "services": {
+      "name": "Hizmetler",
+      "title": "Kolayca Çalışmaya Başlaman İçin Akdeniz Business Center’de İhtiyacın Olan Her Şey Var!",
+      "list": ["7/24 Hizmet" , "Dinlenme Alanı", "Etkinlik" , "Kargo" ,  "Güvenlik" , "Hızlı İnternet","Kolay Ulaşım" , "Sekreterlik" , "Toplantı Odası" , "Yaygın Lokasyon"]
+    },
+    "faq": {
+      "name": "Sık Sorulan Sorular",
+      "title": "",
+      "list": [
+        {
+          "question": "Coworking Nedir?",
+          "answer": "Dilediğin zaman ihtiyacın olan sürede sana ortak çalışma alanlarında verimli ve konforlu çalışabilirsiniz. Coworking üyeliğinde her şey sizin tercihinize göre esnek. Saatlik, günlük, aylık üyelik seçeneklerinden sizin için en uygunu seçerek çalışmaya başlayabilirsiniz."
+        },
+        {
+          "question": "Coworking Alanlarında Eşyalarımı Bırakabilir Miyim?",
+          "answer": "Coworking alanında çalıştığınız masada eşyalarınızı bırakabilmeniz için Özel Masa üyeliğinizin olması gerekiyor. Ortak çalışma alanlarında özel masanız varsa eşyalarınızı dilediğiniz gibi özel masanızın olduğu şubede çalışmak için seçtiğiniz masanızda bırakabilirsiniz. Ortak çalışma alanlarını farklı üyeliklerle kullanıyorsanız kilitli dolap kiralayabilirsiniz."
+        },
+        {
+          "question": "Coworking Üyeliğinin Avantajları Neler?",
+          "answer": "Ortak çalışma alanlarında farklı sektörlerde iş yapan şirketlerle, freelancerla, yeni insanlarla tanışma fırsatı yakalayabilirsiniz. Ayrıca üyelerimiz için düzenlediğimiz etkinliklerimize katılarak hem kendini geliştirebilir hem de eğlenebilirsin. Akdeniz Business center uygulaması sayesinde ihtiyacın olan bir çok kişiye dakikalar içerisinde ulaşabilir size özel olarak sunulan faydalardan yararlanabilirsiniz."
+        },
+        {
+          "question": "Toplantı Odası Kullanabilir Miyim?",
+          "answer": "Coworking alanı kullanan üyelerimizin ücretsiz toplantı odası kullanım hakkı bulunmuyor. İhtiyacınız doğrultusunda dilediğiniz şubedeki tüm toplantı odalarını kişi sayınıza göre rezerve ederek kullanabilirsiniz."
+        }
+      ]
+
+    }
+  }
+}

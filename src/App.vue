@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <NavBarDene />
+    <header>
+      <NavBarDene />
+    </header>
     <router-view />
     <TeklfAlButonu />
-    <HomeFooter />
+    <HomeFooter ref="footer" />
   </div>
 </template>
 
@@ -42,6 +44,52 @@ body {
     font-size: 140%;
   }
 }
+
+.h1-responsive {
+  font-size: 200%;
+}
+@media (min-width: 576px) {
+  .h1-responsive {
+    font-size: 170%;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1-responsive {
+    font-size: 220%;
+  }
+}
+
+@media (min-width: 992px) {
+  .h1-responsive {
+    font-size: 250%;
+  }
+}
+@media (min-width: 1200px) {
+  .h1-responsive {
+    font-size: 300%;
+  }
+}
+
+.hizmet_detay {
+  .slogan_1 {
+    font-size: 200%;
+  }
+}
+@media (min-width: 760px) {
+  .hizmet_detay .slogan_1 {
+    font-size: 250%;
+  }
+}
+@media (min-width: 992px) {
+  .hizmet_detay .slogan_1 {
+    font-size: 250%;
+  }
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
 </style>
 <script>
 import NavBarDene from "@/components/NavBarDene.vue";
@@ -49,7 +97,11 @@ import TeklfAlButonu from "@/components/TeklfAlButonu.vue";
 import HomeFooter from "@/components/HomeFooter.vue";
 export default {
   name: "App",
-  components: { HomeFooter, TeklfAlButonu, NavBarDene },
+  components: {
+    HomeFooter,
+    TeklfAlButonu,
+    NavBarDene,
+  },
   created() {
     this.$store.dispatch("checkScreenSize");
     window.addEventListener("resize", () => {

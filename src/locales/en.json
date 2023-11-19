@@ -1,0 +1,143 @@
+{
+  "flexibleOffices": {
+    "title": "Flexible Office",
+    "subtitle": "With the Akdeniz Business Center ready-to-use office membership, you can work efficiently in the modern offices prepared for you at the most prestigious location in Mersin and leave the rest of things to us!",
+    "advantages": {
+      "title": "Benefits of the Ready-To-Use Office Membership",
+      "subtitle": "Your Office Is Wherever You Want It!",
+      "list": [
+        "You will pay a single invoice for your office-related services such as decoration, furniture, withholding tax, infrastructural costs.",
+        "As your company grows, you can expand your office according to the time and space that you need.",
+        "You can use the coworking spaces and the meeting rooms at Workinton as part of your membership.",
+        "Do Not Work Alone! You can share the same working environment with the other Workinton members, and build a network with the professionals from other sectors.",
+        "All Your Needs Are at Your Fingertips! You can easily access to the services such as secretary, parking, refreshments, internet, cargo pickup etc."
+      ]
+    },
+    "services": {
+      "name": "Services",
+      "title": "Akdeniz Business Center Has Everything That You Need To Start Working Easily!",
+      "list": ["24/7 Service", "Lounge Area", "Events", "Security", "High-Speed Internet", "Refreshments", "Cargo", "Meeting Room", "Widespread Location", "Easy Access"]
+    },
+    "faq": {
+      "name": "Frequently Asked Questions",
+      "title": "",
+      "list": [
+        {
+          "question": "What Is A Ready-To-Use Office?",
+          "answer": "It is the membership model that enables you to start working in the same day with all ready items in different sizes of offices depending upon your desired square meter and number of people. All operational processes are managed for you by the experienced team of Akdeniz Business Center."
+        },
+        {
+          "question": "How Are The Billing And Payment Processes?",
+          "answer": "Billing and payments are made on a monthly basis. You can make the payments by EFT/bank transfer."
+        },
+        {
+          "question": "What Is The Minimum Duration For Renting?",
+          "answer": "You can determine the duration of our ready-to-use office memberships according to your needs."
+        },
+        {
+          "question": "Do I Have To Pay A Deposit For The Ready-To-Use Offices?",
+          "answer": "To initiate the ready-to-use office membership, we collect a deposit payment equal to 1-month membership fee."
+        },
+        {
+          "question": "Can The Ready-To-Use Office Members Use The Meeting Rooms?",
+          "answer": "The Ready-to-Use Office members are entitled to hold a meeting up to 8 people for 8 hours per month, in the branch where they have their offices. Also, we offer 10% discount for the ready-to-use office members for the extra meetings where they will hold private meetings. If you wish to organize meetings with higher participation, our sales manager is always ready to talk for the organization."
+        },
+        {
+          "question": "Can The Ready-To-Use Office Members Use The Co-Working Spaces?",
+          "answer": "The Ready-to-Use Office members are entitled to use the co-working space in all branches for 40 hours per month. Also, if they wish to buy a membership for use, we offer 10% discount."
+        },
+        {
+          "question": "Can The Ready-To-Use Office Members Invite Guests?",
+          "answer": "Ready-to-Use Office Members can host their guests as long as they wish to do so, on the condition that they host their guests in their own offices. However, if the guest comes and starts working regularly, it is added as a number of people."
+        }
+      ]
+    }
+  },
+  "virtualOffices": {
+    "title": "Virtual Office",
+    "subtitle": "At Akdeniz Business Centar Virtual Office, the Position of Your Company is Prestigious and Your\nBusiness Card is Reputable! You can show the address that you need for official procedures as one of the most prestigious\nlocations in Mersin , and choose the most suitable tax office for your transactions.",
+    "advantages": {
+      "title": "Advantages of Virtual Office Membership",
+      "subtitle": "With your Workinton Virtual Office membership:",
+      "list": [
+        "Your calls are received with your company name in English or Turkish.",
+        "Your documents and cargoes are received for you.",
+        "You can hold your meetings comfortably and efficiently with the refreshments offered during the entire day.",
+        "You can use the coworking spaces as part of your membership."
+      ]
+    },
+    "services": {
+      "name": "Services",
+      "title": "Workinton Has Everything That You Need To Start Working Easily!",
+      "list": ["Event", "Cargo", "Security", "Easy Access", "Secretariat", "Meeting Room", "Common Location"]
+    },
+    "faq": {
+      "name": "Frequently Asked Questions",
+      "title": "",
+      "list": [
+        {
+          "question": "What Is a Virtual Office?",
+          "answer": "This is the membership model that enables you to have a legal address without need for a physical place to start a business. You can use the address of the Akdeniz Business Center branch as the legal address for your company. At the branch where your company address is located, we receive your packages on your behalf, and we answer your calls in Turkish and English with our experienced call center team."
+        },
+        {
+          "question": "What Are the Documents Required for Founding a Virtual Office?",
+          "answer": "For founding new companies, your identity card is required, and your current tax certificate, signature circular and trade registry gazette are required for address transfer procedures."
+        },
+        {
+          "question": "What Is Tax Office Verification? What Happens If I Miss The Verification?",
+          "answer": "A tax office verification is the final phase for the company creation process. After the contract that has been signed between Kolektif House and the member is delivered to the tax office, the member verifies that it is located at the indicated address, with the tax officer coming to the location of the member for address verification, and the opening process is completed. If the member misses the verification, the member may request a re-appointment from the Tax Office for a new verification."
+        },
+        {
+          "question": "What Does The Virtual Office Membership Include?",
+          "answer": "We have membership options that our virtual office members may choose depending upon their needs. You can use our branches according to the membership model that you choose. In our membership model, which does not include the use of co-working, you can use all our branches hourly or daily whenever you want in line with your needs."
+        },
+        {
+          "question": "What Is Call Answering (Secretary Service)?",
+          "answer": "If you just wish to use the Akdeniz Business Center Call Answering Service, you can buy call answering services for your company as an additional service. A special number is allocated to your company, and incoming calls are answered with your company name. Depending upon your choice, they are transferred to you by telephone or e-mail."
+        }
+      ]
+
+    }
+  },
+  "coWorkingOffices": {
+    "title": "Coworking",
+    "subtitle": "Work Wherever You Want and Whenever You Want It. When you take a break and raise your head while working on the desk that you choose in the Akdeniz\nBusiness Center coworking spaces in the comfort of a fully-equipped office at Mersin branch that you\nchoose, you can take limitless opportunities for making connection and cooperation.",
+    "advantages": {
+      "title": "Advantages of Coworking Membership",
+      "subtitle": "Surely, our office chairs and times are not the only things flexible at Akdeniz Business Center . Choose\nthe membership model that best caters your needs, and start working immediately!",
+      "list": [
+        "You can use the hours that you buy throughout the year at any Workinton branch, whenever you\nwant it.",
+        "You can work at the desk that you want in the preferred branch of Akdeniz Business Center at any\ntime that you want it.",
+        "You can select and reserve the desk that you prefer to work for minimum one month. At the end of\nthe day, you can leave your computer and personal arrangement as you wish. You will have a private\noffice chair and a rented locker allocated to you."
+      ]
+    },
+    "services": {
+      "name": "Services",
+      "title": "Akdeniz Business Center Has Everything That You Need To Start Working Easily!",
+      "list": ["Lounge Areas", "Activity", "Security", "High Speed Internet", "Snacks", "Locker", "Easy Transportation", "Cleaning", "Meeting Room", "Prevalence"]
+
+    },
+    "faq": {
+      "name": "Frequently Asked Questions",
+      "title": "",
+      "list": [
+        {
+          "question": "What Is Co-Working?",
+          "answer": "You can work efficiently and comfortably in the coworking spaces at our nearest branch for the duration and time that you want and need it. With the Coworking membership, we offer everything flexibly according to your choice. You can start coworking by choosing the most suitable option for hourly, daily and monthly subscriptions."
+        },
+        {
+          "question": "Can I Leave My Items In The Coworking Spaces?",
+          "answer": "To be able to leave your items at the desk where you are working in the coworking space, you must have a Private Desk membership. If you have a private desk in the coworking spaces, you can leave your items on the desk that you choose to cowork in the branch for which you have a private desk. If you are using the coworking spaces with different memberships, you can rent lockers."
+        },
+        {
+          "question": "What Are The Benefits Of The Coworking Membership?",
+          "answer": "In the coworking spaces, you can take the opportunity to meet with the companies, freelancers and the new people working in different sectors. You can also improve yourself and have fun by participating in the events that we organize for our members. By using the Workinton application, you can reach out to as many people as you need just within minutes, and make use of the benefits specifically offered to you."
+        },
+        {
+          "question": "Can I Use A Meeting Room?",
+          "answer": "Our members, who use the coworking spaces, are not entitled to use the meeting rooms free of charge. Depending upon your needs, you can use all meeting rooms in the branch that you choose by booking a room in advance according to your number of people."
+        }
+      ]
+    }
+  }
+}
