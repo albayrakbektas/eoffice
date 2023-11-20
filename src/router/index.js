@@ -60,6 +60,15 @@ const routes = [
       import(/* webpackChunkName: "co-working" */ "../views/CoWorkingView.vue"),
   },
   {
+    path: "/iletisim",
+    name: "iletisim",
+    // route level code-splitting
+    // this generates a separate chunk (iletisim.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "iletisim" */ "../views/ContactView.vue"),
+  },
+  {
     path: "/fiyatlar",
     name: "fiyatlar",
     // route level code-splitting

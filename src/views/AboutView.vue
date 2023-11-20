@@ -48,13 +48,11 @@
         <div class="col-12 col-md-6 mb-3">
           <div class="card white text-center z-depth-2">
             <div class="card-body">
-              <h5 class="text-uppercase mt-2 mb-3">Vizyonumuz</h5>
+              <h5 class="text-uppercase mt-2 mb-3">
+                {{ $t("aboutView.vision.title") }}
+              </h5>
               <p class="mb-0 font-weight-light">
-                Son yıllarda gittikçe büyüyen Hazır ofis ve Sanal ofis
-                sektörünün en çok tercih edilen ve müşterilerine en kaliteli
-                hizmeti veren Hazır ofis şirketi olmak. eOfis olarak hızlı ve
-                emin adımlarla ilerlerken kurumsal bir kimlikle başta Türkiye
-                olmak üzere tüm Dünyada bir marka haline gelmek.
+                {{ $t("aboutView.vision.subtitle") }}
               </p>
             </div>
           </div>
@@ -63,12 +61,11 @@
         <div class="col-12 col-md-6 mb-3">
           <div class="card white text-center z-depth-2">
             <div class="card-body">
-              <h5 class="text-uppercase mt-2 mb-3">Misyonumuz</h5>
+              <h5 class="text-uppercase mt-2 mb-3">
+                {{ $t("aboutView.mission.title") }}
+              </h5>
               <p class="mb-4 font-weight-light">
-                Kaliteli ve modern ofis çözümlerimiz ile müşterilerimize
-                prestijli iş merkezlerinde profesyonel ofis hizmetleri sunmayı,
-                şirket sahiplerinin maliyetini düşürerek onların işlerine
-                odaklanmasını, başarıya ulaşmasını hedeflemekteyiz.
+                {{ $t("aboutView.mission.subtitle") }}
               </p>
             </div>
           </div>

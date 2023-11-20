@@ -139,5 +139,15 @@
         }
       ]
     }
+  },
+  "aboutView": {
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "To provide professional office services in prestigious business centers through our high-quality and modern office solutions, aiming to reduce the costs for business owners so they can focus on their work and achieve success."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "subtitle": "To become the most preferred ready office and virtual office company in the rapidly growing sector in recent years, known for offering the highest quality services. As Akdeniz Business Center, we aim to become a globally recognized brand, especially in Turkey, while progressing swiftly and confidently with a corporate identity."
+    }
   }
 }

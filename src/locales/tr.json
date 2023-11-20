@@ -136,7 +136,16 @@
           "answer": "Coworking alanı kullanan üyelerimizin ücretsiz toplantı odası kullanım hakkı bulunmuyor. İhtiyacınız doğrultusunda dilediğiniz şubedeki tüm toplantı odalarını kişi sayınıza göre rezerve ederek kullanabilirsiniz."
         }
       ]
-
+    }
+  },
+  "aboutView": {
+    "mission": {
+      "title": "Misyonuzmuz",
+      "subtitle": "Kaliteli ve modern ofis çözümlerimiz ile müşterilerimize prestijli iş merkezlerinde profesyonel ofis hizmetleri sunmayı, şirket sahiplerinin maliyetini düşürerek onların işlerine odaklanmasını, başarıya ulaşmasını hedeflemekteyiz."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "subtitle": "Son yıllarda gittikçe büyüyen Hazır ofis ve Sanal ofis sektörünün en çok tercih edilen ve müşterilerine en kaliteli hizmeti veren Hazır ofis şirketi olmak. Akdeniz Business Center olarak hızlı ve emin adımlarla ilerlerken kurumsal bir kimlikle başta Türkiye olmak üzere tüm Dünyada bir marka haline gelmek."
     }
   }
 }

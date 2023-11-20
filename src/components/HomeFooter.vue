@@ -18,21 +18,17 @@ export default {
     <div class="container text-start text-md-left mt-5">
       <div class="row mt-3">
         <div class="col-12 col-md-4 col-lg-4 mx-auto mb-4">
-          <div class="text-uppercase font-weight-bold">eOfis</div>
+          <div class="text-uppercase font-weight-bold">
+            Akdeniz Business Center
+          </div>
           <hr
             class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 60px"
+            style="width: 15rem"
           />
           <p>
-            eOfis, girişimcilere, serbest meslek çalışanlarına, kobilere ve
-            kurumsal firmalara, 2010'dan bu yana çalışma alanları çözümleri
-            sunuyor
-          </p>
-          <p>
-            <a href="/lokasyonlar"
-              ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Tüm
-              Lokasyonlar</a
-            >
+            Akdeniz Business Center, girişimcilere, serbest meslek
+            çalışanlarına, kobilere ve kurumsal firmalara, 2020'den bu yana
+            çalışma alanları çözümleri sunuyor
           </p>
           <p>
             <a href="/ozel-ofisler"
@@ -40,12 +36,12 @@ export default {
               Ofisler</a
             >
           </p>
-          <p>
-            <a href="/bloglar"
-              ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Blog
-              Yazıları</a
-            >
-          </p>
+          <!--          <p>-->
+          <!--            <a href="/bloglar"-->
+          <!--              ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Blog-->
+          <!--              Yazıları</a-->
+          <!--            >-->
+          <!--          </p>-->
         </div>
 
         <div class="col-6 col-md-2 col-lg-2 offset-lg-2 mb-4">
@@ -55,11 +51,6 @@ export default {
             style="width: 60px"
           />
           <p><a href="/hakkimizda">Hakkımızda</a></p>
-          <p><a href="/kariyer">Kariyer</a></p>
-          <p><a href="/ortaklik">Ortaklık</a></p>
-          <p>
-            <a href="/sirket-kurulusu">Şirket Kuruluşu</a>
-          </p>
         </div>
 
         <div class="col-6 col-md-2 col-lg-2 mb-4">
@@ -70,23 +61,6 @@ export default {
           />
           <p><a href="/iletisim">İletişim</a></p>
           <p><a href="/sss">SSS</a></p>
-          <p>
-            <a href="/kullanim-kosullari">Kullanım Koşulları</a>
-          </p>
-          <p><a href="/gizlilik">Gizlilik</a></p>
-        </div>
-
-        <div class="col-12 col-md-4 col-lg-2 mx-auto mb-md-0 mb-4">
-          <div class="text-uppercase font-weight-bold">Ödeme Kanalları</div>
-          <hr
-            class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 60px"
-          />
-          <p>
-            <a href="https://panel.eofis.com.tr/?page=Financial" target="_blank"
-              >Online Ödeme</a
-            >
-          </p>
         </div>
       </div>
     </div>
@@ -97,58 +71,11 @@ export default {
           <div
             class="col-12 col-md-12 col-lg-12 text-center text-md-left mb-4 mb-md-0"
           >
-            <div class="mb-3">
-              <a
-                target="_blank"
-                href="/aydinlatma-beyani"
-                title="KVKK Aydınlatma Beyanı"
-                >Aydınlatma Beyanı</a
-              >
-              |
-              <a
-                target="_blank"
-                href="/acik-riza-onayi"
-                title="KVKK Açık Rıza Onayı"
-                >Açık Rıza Onayı</a
-              >
-              |
-              <a
-                target="_blank"
-                style="white-space: nowrap"
-                href="/KVK_Basvuru_Formu_eOfis.pdf"
-                title="KVKK Başvuru Formu"
-                >KVKK Başvuru Formu</a
-              >
-              |
-              <a
-                target="_blank"
-                style="white-space: nowrap"
-                href="/bgys-politikasi"
-                title="BGYS Politikası"
-                >BGYS Politikası</a
-              >
-            </div>
             <div class="mb-0">
               © 2023 Copyright
-              <a href="/">Eofis Ofis Hizmetleri</a>
+              <a href="/">Akdeniz Business Center</a>
             </div>
           </div>
-
-          <!--          <div-->
-          <!--            class="col-12 col-md-6 col-lg-6 text-center text-md-right mb-3 mb-md-0"-->
-          <!--          >-->
-          <!--            <div class="mb-0">-->
-          <!--              <a href="//orfs.com.tr" target="_blank"-->
-          <!--                ><img-->
-          <!--                  style="height: 30px"-->
-          <!--                  src="/ass/img/svg/orfs_eofis.svg"-->
-          <!--                  alt="Orfs"-->
-          <!--                  title="Design and Development by Orfs"-->
-          <!--                  width="266"-->
-          <!--                  height="30"-->
-          <!--              /></a>-->
-          <!--            </div>-->
-          <!--          </div>-->
         </div>
       </div>
     </div>

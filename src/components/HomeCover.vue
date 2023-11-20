@@ -26,6 +26,76 @@ export default {
           photo to make it your own.
         </p>
       </div>
+      <div class="row" v-if="!isMobile" style="translate: 0 50vh; height: 45vh">
+        <div class="col-12">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="card" style="width: 24%">
+              <img
+                src="https://picsum.photos/200"
+                class="card-img-top"
+                style="height: 20vh"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 24%">
+              <img
+                src="https://picsum.photos/200"
+                class="card-img-top"
+                style="height: 20vh"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 24%">
+              <img
+                src="https://picsum.photos/200"
+                class="card-img-top"
+                style="height: 20vh"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 24%">
+              <img
+                src="https://picsum.photos/200"
+                class="card-img-top"
+                style="height: 20vh"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         v-if="!isMobile"
         class="main-bot d-flex justify-content-between"
@@ -52,7 +122,7 @@ export default {
 <style scoped lang="scss">
 .cover-container {
   height: 100vh;
-  background-image: url("https://picsum.photos/1200");
+  background-image: url("/public/img/mersin_sahil.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -68,7 +138,7 @@ export default {
   text-align: center;
 }
 .main-top-mobile {
-  top: 12.5%;
+  top: 30%;
   left: 50%;
   translate: -50% 12.5%;
   width: 80%;
