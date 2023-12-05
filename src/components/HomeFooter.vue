@@ -6,13 +6,7 @@ export default {
       return this.$t("keywords");
     },
   },
-  methods: {
-    footerOffset() {
-      let footer = this.$refs.footer;
-      console.log(footer.getBoundingClientRect().bottom);
-      return footer.getBoundingClientRect().top;
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -21,7 +15,7 @@ export default {
     <hr class="mt-0" />
     <div class="container text-start text-md-left mt-5">
       <div class="row mt-3">
-        <div class="col-12 col-md-4 col-lg-4 mx-auto mb-4">
+        <div class="col-12 col-md-4 me-auto mb-4">
           <div
             class="text-uppercase font-weight-bold"
             style="color: rgba(13, 60, 85, 1)"
@@ -39,12 +33,12 @@ export default {
           </p>
         </div>
 
-        <div class="col-4 col-md-2 col-lg-2 offset-lg-2 mb-4">
+        <div class="col-6 col-md-2 mb-4">
           <div
             class="text-uppercase font-weight-bold"
             style="color: rgba(13, 60, 85, 1)"
           >
-            Kurumsal
+            {{ $t("footer.corporate") }}
           </div>
           <hr
             class="mb-3 mt-0 d-inline-block mx-auto"
@@ -60,13 +54,12 @@ export default {
             <a href="/iletisim">{{ keywords.contact }}</a>
           </p>
         </div>
-
-        <div class="col-4 col-md-2 col-lg-2 mb-4">
+        <div class="col-6 col-md-2 mb-4">
           <div
             class="text-uppercase font-weight-bold"
             style="color: rgba(13, 60, 85, 1)"
           >
-            Erişim
+            {{ $t("footer.services") }}
           </div>
           <hr
             class="mb-3 mt-0 d-inline-block mx-auto"
@@ -83,12 +76,12 @@ export default {
             <a href="/co-working">{{ keywords.coworkingOffice }}</a>
           </p>
         </div>
-        <div class="col-4 col-md-2 col-lg-2 mb-4">
+        <div class="col-6 col-md-2 mb-4">
           <div
             class="text-uppercase font-weight-bold"
             style="color: rgba(13, 60, 85, 1)"
           >
-            Erişim
+            {{ $t("footer.socialMedia") }}
           </div>
           <hr
             class="mb-3 mt-0 d-inline-block mx-auto"
@@ -96,13 +89,15 @@ export default {
           />
 
           <p>
-            <a href="/hazir-ofis">{{ keywords.flexibleOffice }}</a>
+            <a
+              class=""
+              href="https://instagram.com/akdeniz.business.center?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
+              target="_blank"
+              >Instagram
+            </a>
           </p>
           <p>
-            <a href="/sanal-ofis">{{ keywords.virtualOffice }}</a>
-          </p>
-          <p>
-            <a href="/co-working">{{ keywords.coworkingOffice }}</a>
+            <a href="mailto:info@akdenizbusinesscenter.com">Email</a>
           </p>
         </div>
       </div>

@@ -3,6 +3,18 @@ import emailjs from "emailjs-com";
 
 export default {
   name: "ContactView",
+  metaInfo() {
+    return {
+      title: this.$t("seo.contactView.title"),
+      meta: [
+        {
+          vmid: "description",
+          name: "description",
+          content: this.$t("seo.contactView.description"),
+        },
+      ],
+    };
+  },
   data() {
     return {
       sendForm: {

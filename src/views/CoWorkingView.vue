@@ -3,6 +3,18 @@ import emailjs from "emailjs-com";
 
 export default {
   name: "CoWorkingView",
+  metaInfo() {
+    return {
+      title: this.$t("seo.coWorkingView.title"),
+      meta: [
+        {
+          vmid: "description",
+          name: "description",
+          content: this.$t("seo.coWorkingView.description"),
+        },
+      ],
+    };
+  },
   components: {},
   data() {
     return {

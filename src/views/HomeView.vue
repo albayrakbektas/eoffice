@@ -25,6 +25,18 @@ import OfficeTypeCardMobileList from "@/components/OfficeTypeCardMobileList.vue"
 
 export default {
   name: "HomeView",
+  metaInfo() {
+    return {
+      title: this.$t("seo.homeView.title"),
+      meta: [
+        {
+          vmid: "description",
+          name: "description",
+          content: this.$t("seo.homeView.description"),
+        },
+      ],
+    };
+  },
   components: {
     OfficeTypeCardMobileList,
     HomeCover,

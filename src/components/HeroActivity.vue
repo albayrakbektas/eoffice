@@ -44,7 +44,7 @@ export default {
         :class="textContentAnimation"
       >
         <div
-          class="anasayfa_spec_right white-text py-3 py-lg-5 pl-3 pl-sm-5 mb-3-mb-lg-5 text-sm-left text-center"
+          class="white-text p-2 p-md-5 py-lg-5 pl-3 pl-sm-5 mb-3-mb-lg-5 text-sm-left text-center"
         >
           <h2 class="mt-3 mt-lg-5 mb-4 h3-responsive">
             {{ heroActivity.title }}

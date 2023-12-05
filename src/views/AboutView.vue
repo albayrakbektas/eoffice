@@ -1,3 +1,20 @@
+<script>
+export default {
+  metaInfo() {
+    return {
+      title: this.$t("seo.aboutUsView.title"),
+      meta: [
+        {
+          vmid: "description",
+          name: "description",
+          content: this.$t("seo.aboutUsView.description"), // Bu kısım description için çeviri eklemeniz gerekiyor
+        },
+      ],
+      titleTemplate: null, // Üst seviye başlık şablonunu devre dışı bırakır
+    };
+  },
+};
+</script>
 <template>
   <div class="container mt-4 mt-lg-5 pt-5 pt-lg-5">
     <section class="mb-3 px-5 mx-5 pt-0 text-center">

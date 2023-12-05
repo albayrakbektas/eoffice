@@ -263,8 +263,8 @@
       "content": "By getting a dedicated phone line and number, you can take advantage of secretarial services, ensure the forwarding of incoming calls, and keep track of your mail and parcels arriving at your office."
     },
     "heroActivityPlace": {
-      "title": "We Have Prepared Venues for All Your Events",
-      "content": "As a privilege of being an Akdeniz Business Center member, you can use eOfis's event spaces for trainings, launches, cocktail parties, social gatherings, and celebrations. With more than 120 meeting and seminar halls, we are at your service for all kinds of events."
+      "title": "Perfect Venues for Your Special Events",
+      "content": "At Akdeniz Business Center, we offer ideal venues for all your events, from educational sessions to launches, cocktails to social gatherings. Our modern meeting and seminar rooms are equipped with the latest technology and uphold high standards of service. These spaces, thoughtfully designed for both business and leisure events, ensure your gatherings are seamless and memorable"
     },
     "whyAbc": {
       "title": "Why Akdeniz Business Center?",
@@ -310,6 +310,41 @@
     "message": "Message",
     "company": "I want to establish a company.",
     "quotationForm": "Quotation Form"
+  },
+  "footer": {
+    "corporate": "Corporate",
+    "services": "Services",
+    "socialMedia": "Social Media"
+  },
+  "seo": {
+    "homeView": {
+      "title": "Welcome to Akdeniz Business Center - Your Office Solution Partner",
+      "description": "Discover premium office solutions at Akdeniz Business Center. From virtual offices to co-working spaces, we offer flexible options tailored to your business needs."
+    },
+    "flexibleOfficeView": {
+      "title": "Flexible Office Solutions - Akdeniz Business Center",
+      "description": "Explore our flexible office solutions at Akdeniz Business Center. Tailored to meet your business needs with state-of-the-art facilities and prime locations."
+    },
+    "virtualOfficeView": {
+      "title": "Virtual Office Solutions - Akdeniz Business Center",
+      "description": "Discover the convenience and flexibility of virtual office solutions at Akdeniz Business Center. Ideal for remote work, startups, and businesses seeking a prestigious address."
+    },
+    "coWorkingView": {
+      "title": "Co-working Spaces - Akdeniz Business Center",
+      "description": "Join our vibrant co-working spaces at Akdeniz Business Center. Perfect for entrepreneurs, freelancers, and teams looking for a collaborative and dynamic work environment."
+    },
+    "aboutUsView": {
+      "title": "About Us - Akdeniz Business Center",
+      "description": "Learn more about Akdeniz Business Center, our services, and our commitment to excellence in business solutions."
+    },
+    "pricesView": {
+      "title": "Pricing - Akdeniz Business Center",
+      "description": "Explore transparent and competitive pricing for our office solutions at Akdeniz Business Center. Find the perfect plan for your business needs, from virtual offices to co-working spaces."
+    },
+    "contactView": {
+      "title": "Contact Us - Akdeniz Business Center",
+      "description": "Get in touch with Akdeniz Business Center. Find our contact information, locations, and ways to connect for your business inquiries and support needs."
+    }
   },
   "keywords": {
     "virtualOffice": "Virtual Office",

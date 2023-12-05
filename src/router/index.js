@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Meta from "vue-meta";
 
 Vue.use(VueRouter);
+Vue.use(Meta);
 
 const routes = [
   {
@@ -13,6 +15,10 @@ const routes = [
   {
     path: "/hakkimizda",
     name: "about",
+    meta: {
+      titleKey: "seo.aboutUsView.title",
+      descriptionKey: "seo.aboutUsView.description",
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

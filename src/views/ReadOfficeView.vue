@@ -3,6 +3,18 @@ import emailjs from "emailjs-com";
 
 export default {
   name: "ReadOfficeView",
+  metaInfo() {
+    return {
+      title: this.$t("seo.flexibleOfficeView.title"),
+      meta: [
+        {
+          vmid: "description",
+          name: "description",
+          content: this.$t("seo.flexibleOfficeView.description"),
+        },
+      ],
+    };
+  },
   components: {},
   data() {
     return {

@@ -33,11 +33,32 @@ export default {
         </div>
       </div>
 
-      <div class="col-11 col-md-4 flex-center d-none d-md-flex">
+      <div
+        class="row col-11 col-md-4 flex-center justify-content-center align-items-center d-none d-md-flex"
+      >
         <img
-          src="//www.eofis.com.tr/ass/img/office-x.webp"
-          alt="eOfis"
-          class="z-depth-0 img-fluid"
+          src="/img/avatar_call_center.jpeg"
+          alt="avatar_call_center"
+          class="img-fluid col-6 object-fit-cover"
+          style="border-radius: 50%; height: 10rem; width: 10rem"
+        />
+        <img
+          src="/img/avatar_meeting.jpeg"
+          alt="avatar_meeting"
+          class="img-fluid col-6 object-fit-cover"
+          style="height: 10rem; width: 10rem"
+        />
+        <img
+          src="/img/avatar_office_room.jpeg"
+          alt="avatar_office_room"
+          class="img-fluid col-6 object-fit-cover"
+          style="height: 10rem; width: 10rem"
+        />
+        <img
+          src="/img/avatar_office_network.jpeg"
+          alt="avatar_office_network"
+          class="img-fluid col-6 object-fit-cover"
+          style="border-radius: 50%; height: 10rem; width: 10rem"
         />
       </div>
 

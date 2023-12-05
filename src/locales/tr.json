@@ -261,8 +261,8 @@
       "content": "Size özel telefon ve hat tahsisi yaptırarak, sekretarya hizmetinden faydalanabilir, gelen aramaları aktarılmasını sağlayabilir, ofisinize gelen posta ve kargolarınızın takibini yapabilirsiniz."
     },
     "heroActivityPlace": {
-      "title": "Her Türlü Etkinlikleriniz İçin Mekanları Hazırladık",
-      "content": "Eğitim, Lansman, Kokteyl organizasyonları, sosyal buluşma ve kutlamalarınız için eOfis’in etkinlik alanlarını, Akdeniz Business Center üyesi  olmanın ayrıcalığı ile kullanabilirsiniz. 120'den fazla toplantı ve seminer salonu, her türlü etkinliğiniz için emrinizde."
+      "title": "Özel Etkinlikleriniz İçin Mükemmel Mekan Seçenekleri",
+      "content": "Akdeniz Business Center’da, eğitimlerden lansmanlara, kokteyllerden sosyal buluşmalara her türlü etkinliğiniz için ideal mekanlar sunuyoruz. Modern toplantı ve seminer salonlarımız, en son teknoloji ve yüksek standartlarda hizmet anlayışıyla donatılmıştır. İş veya eğlence odaklı toplantılarınız için her detayın düşünüldüğü bu alanlarda, etkinlikleriniz sorunsuz ve unutulmaz bir şekilde gerçekleşsin."
     },
     "whyAbc": {
       "title": "Neden Akdeniz Business Center?",
@@ -308,6 +308,41 @@
     "message": "Mesajınız",
     "company": "Şirket kurulumu istiyorum",
     "quotationForm": "Teklif Formu"
+  },
+  "footer": {
+    "corporate": "Kurumsal",
+    "services": "Erişim",
+    "socialMedia": "Sosyal Medya"
+  },
+  "seo": {
+    "homeView": {
+      "title": "Akdeniz İş Merkezi'ne Hoş Geldiniz - Ofis Çözüm Ortağınız",
+      "description": "Akdeniz İş Merkezi'nde premium ofis çözümlerini keşfedin. Sanal ofislerden ortak çalışma alanlarına kadar, iş ihtiyaçlarınıza uygun esnek seçenekler sunuyoruz."
+    },
+    "flexibleOfficeView": {
+      "title": "Hazır Ofis Çözümleri - Akdeniz İş Merkezi",
+      "description": "Akdeniz İş Merkezi'nde sunulan hazır ofis çözümlerimizi keşfedin. İş ihtiyaçlarınıza uygun olarak tasarlanmış, son teknoloji olanaklara ve özel lokasyonlara sahip ofislerimiz."
+    },
+    "virtualOfficeView": {
+      "title": "Sanal Ofis Çözümleri - Akdeniz İş Merkezi",
+      "description": "Akdeniz İş Merkezi'nde sanal ofis çözümlerinin kolaylığını ve esnekliğini keşfedin. Uzaktan çalışma, startuplar ve prestijli bir adres arayan işletmeler için ideal."
+    },
+    "coWorkingView": {
+      "title": "Ortak Çalışma Alanları - Akdeniz İş Merkezi",
+      "description": "Akdeniz İş Merkezi'ndeki canlı ortak çalışma alanlarımıza katılın. Girişimciler, serbest çalışanlar ve iş birliğine dayalı, dinamik bir çalışma ortamı arayan ekipler için mükemmel."
+    },
+    "aboutUsView": {
+      "title": "Hakkımızda - Akdeniz Business Center",
+      "description": "Akdeniz Business Center, sunduğumuz hizmetler ve iş çözümlerindeki mükemmellik taahhüdümüz hakkında daha fazla bilgi edinin."
+    },
+    "pricesView": {
+      "title": "Fiyatlar - Akdeniz İş Merkezi",
+      "description": "Akdeniz İş Merkezi'nde ofis çözümlerimiz için şeffaf ve rekabetçi fiyatlandırmayı keşfedin. Sanal ofislerden ortak çalışma alanlarına kadar iş ihtiyaçlarınıza uygun mükemmel planı bulun."
+    },
+    "contactView": {
+      "title": "Bize Ulaşın - Akdeniz İş Merkezi",
+      "description": "Akdeniz İş Merkezi ile iletişime geçin. İletişim bilgilerimizi, lokasyonlarımızı ve iş sorgularınız ve destek ihtiyaçlarınız için bağlantı kurabileceğiniz yolları bulun."
+    }
   },
   "keywords": {
     "virtualOffice": "Sanal Ofis",

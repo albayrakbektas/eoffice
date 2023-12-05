@@ -13,6 +13,9 @@ import "@egjs/vue-flicking/dist/flicking.css";
 // Or, if you have to support IE9
 import "@egjs/vue-flicking/dist/flicking-inline.css";
 import VueI18n from "vue-i18n";
+import VueMeta from "vue-meta";
+
+Vue.use(VueMeta);
 
 Vue.use(Flicking);
 Vue.use(VueI18n);
@@ -24,8 +27,10 @@ const messages = {
   tr: require("./locales/tr.json"),
 };
 
+const savedLanguage = localStorage.getItem("userLanguage") || "en";
+
 const i18n = new VueI18n({
-  locale: "en", // Varsayılan dil
+  locale: savedLanguage, // Kaydedilmiş dil tercihini veya varsayılanı kullan
   fallbackLocale: "en",
   messages,
 });

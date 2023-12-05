@@ -34,7 +34,7 @@ export default {
         style="visibility: visible"
       >
         <div
-          class="text-white py-3 py-sm-5 mt-0 mb-0 mt-lg-3 mb-lg-5 text-sm-left text-center"
+          class="text-white py-3 p-md-5 py-sm-5 mt-0 mb-0 mt-lg-3 mb-lg-5 text-sm-left text-center"
         >
           <h2 class="mt-3 mt-lg-5 mb-3 mb-lg-4 h3-responsive">
             {{ heroPlazaCount.title }}

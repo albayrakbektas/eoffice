@@ -32,6 +32,7 @@ export default {
       this.dropdownStates[dropdownName] = !this.dropdownStates[dropdownName];
     },
     changeLanguage(lang) {
+      localStorage.setItem("userLanguage", lang);
       this.$i18n.locale = lang;
     },
   },
