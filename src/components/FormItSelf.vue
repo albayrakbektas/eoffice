@@ -207,7 +207,9 @@ export default {
                       class="dropdown-content select-dropdown w-100"
                     >
                       <li class="">
-                        <span class="filtrable"> Hizmet Seçin</span>
+                        <span class="filtrable">
+                          {{ $t("form.selectAService") }}</span
+                        >
                       </li>
                       <li class="active selected">
                         <span class="filtrable"> Hazır Ofis</span>
@@ -235,7 +237,9 @@ export default {
                       id="form_hizmet_sec"
                       name="form_hizmet_sec"
                     >
-                      <option value="" selected="">Hizmet Seçin</option>
+                      <option value="" selected="">
+                        {{ $t("form.selectAService") }}
+                      </option>
                       <option value="1">Hazır Ofis</option>
                       <option value="3">Toplantı Odası</option>
                       <option value="14">Sanal Ofis</option>
@@ -262,7 +266,7 @@ export default {
                       <label
                         class="form-check-label font-weight-bold"
                         for="form_sirket_bilgi"
-                        >Şirket Kurulumu İstiyorum</label
+                        >{{ $t("form.company") }}</label
                       >
                       <span
                         style="

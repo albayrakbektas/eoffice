@@ -1,6 +1,4 @@
 <script>
-import GreyInfoCard from "@/components/GreyInfoCard.vue";
-
 export default {
   name: "HomeCover",
   computed: {
@@ -8,7 +6,6 @@ export default {
       return this.$store.getters.isMobile;
     },
   },
-  components: { GreyInfoCard },
 };
 </script>
 
@@ -18,79 +15,90 @@ export default {
     class="cover-container d-flex p-3 mx-auto flex-column"
   >
     <main class="px-3">
-      <div :class="isMobile ? 'main-top-mobile' : ''" class="main-top">
+      <div
+        :class="isMobile ? 'main-top-mobile' : ''"
+        class="main-top bg-white bg-opacity-50"
+      >
         <h1>Cover your page.</h1>
-        <p class="lead">
+        <p class="lead fw-bold fs-6">
           Cover is a one-page template for building simple and beautiful home
           pages. Download, edit the text, and add your own fullscreen background
           photo to make it your own.
         </p>
       </div>
       <div class="row" v-if="!isMobile" style="translate: 0 50vh; height: 45vh">
-        <div class="col-12">
-          <div class="d-flex flex-row justify-content-between">
-            <div class="card" style="width: 24%">
+        <div class="col-4 my-auto bg-white bg-opacity-50">
+          <h1>Cover your page.</h1>
+          <p class="lead fw-bolder fs-6">
+            Cover is a one-page template for building simple and beautiful home
+            pages. Download, edit the text, and add your own fullscreen
+            background photo to make it your own.
+          </p>
+        </div>
+        <div class="row col-8">
+          <div class="col-4 p-3">
+            <div class="card">
               <img
-                src="https://picsum.photos/200"
+                src="/img/flexible_office.jpeg"
                 class="card-img-top"
-                style="height: 20vh"
                 alt="..."
+                style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">
+                  {{ $t("homeCoverCards.flexibleOffice.title") }}
+                </h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  {{ $t("homeCoverCards.flexibleOffice.subtitle") }}
                 </p>
-                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+                <a href="#" class="btn float-end fw-bold"
+                  >{{ $t("keywords.more")
+                  }}<i class="bi bi-chevron-right fw-bold"></i
+                ></a>
               </div>
             </div>
-            <div class="card" style="width: 24%">
+          </div>
+          <div class="col-4 p-3">
+            <div class="card">
               <img
-                src="https://picsum.photos/200"
+                src="/img/virtual_office.jpeg"
                 class="card-img-top"
-                style="height: 20vh"
                 alt="..."
+                style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">
+                  {{ $t("homeCoverCards.virtualOffice.title") }}
+                </h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  {{ $t("homeCoverCards.virtualOffice.subtitle") }}
                 </p>
-                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+                <a href="#" class="btn float-end fw-bold"
+                  >{{ $t("keywords.more")
+                  }}<i class="bi bi-chevron-right fw-bold"></i
+                ></a>
               </div>
             </div>
-            <div class="card" style="width: 24%">
+          </div>
+          <div class="col-4 p-3">
+            <div class="card">
               <img
-                src="https://picsum.photos/200"
+                src="/img/coworking.jpeg"
                 class="card-img-top"
-                style="height: 20vh"
                 alt="..."
+                style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">
+                  {{ $t("homeCoverCards.coworkingOffice.title") }}
+                </h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  {{ $t("homeCoverCards.coworkingOffice.subtitle") }}
                 </p>
-                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="width: 24%">
-              <img
-                src="https://picsum.photos/200"
-                class="card-img-top"
-                style="height: 20vh"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn text-primary fw-bold">Go somewhere</a>
+                <a href="#" class="btn float-end fw-bold"
+                  >{{ $t("keywords.more")
+                  }}<i class="bi bi-chevron-right fw-bold"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -101,20 +109,20 @@ export default {
         class="main-bot d-flex justify-content-between"
         style="max-height: 45vh; width: 65vw"
       ></div>
-      <div class="grey-card-container w-100 row mx-auto" v-if="isMobile">
-        <div class="col-3">
-          <GreyInfoCard />
-        </div>
-        <div class="col-3">
-          <GreyInfoCard />
-        </div>
-        <div class="col-3">
-          <GreyInfoCard />
-        </div>
-        <div class="col-3">
-          <GreyInfoCard />
-        </div>
-      </div>
+      <!--      <div class="grey-card-container w-100 row mx-auto" v-if="isMobile">-->
+      <!--        <div class="col-3">-->
+      <!--          <GreyInfoCard />-->
+      <!--        </div>-->
+      <!--        <div class="col-3">-->
+      <!--          <GreyInfoCard />-->
+      <!--        </div>-->
+      <!--        <div class="col-3">-->
+      <!--          <GreyInfoCard />-->
+      <!--        </div>-->
+      <!--        <div class="col-3">-->
+      <!--          <GreyInfoCard />-->
+      <!--        </div>-->
+      <!--      </div>-->
     </main>
   </div>
 </template>
@@ -122,7 +130,7 @@ export default {
 <style scoped lang="scss">
 .cover-container {
   height: 100vh;
-  background-image: url("/public/img/mersin_sahil.jpeg");
+  background-image: url("/public/img/homecover.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -138,10 +146,11 @@ export default {
   text-align: center;
 }
 .main-top-mobile {
-  top: 30%;
+  top: 40%;
   left: 50%;
   translate: -50% 12.5%;
   width: 80%;
+  padding: 1%;
   h1 {
     font-size: 135%;
   }
@@ -165,5 +174,12 @@ export default {
   .col-3 {
     padding: 0 0.25rem !important;
   }
+}
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 </style>

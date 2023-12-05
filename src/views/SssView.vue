@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container mt-0 mt-lg-5 mb-5 pt-0 pt-lg-5">
+  <div class="container mt-4 mt-lg-5 mb-5 pt-5 pt-lg-5">
     <section class="mb-5 pt-0 pb-5 text-left">
       <h1 class="h2-responsive mt-3 mb-5 text-center">Sık Sorulan Sorular</h1>
       <div class="accordion" id="accordionPanelsStayOpenExample">

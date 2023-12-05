@@ -149,5 +149,184 @@
       "title": "Our Vision",
       "subtitle": "To become the most preferred ready office and virtual office company in the rapidly growing sector in recent years, known for offering the highest quality services. As Akdeniz Business Center, we aim to become a globally recognized brand, especially in Turkey, while progressing swiftly and confidently with a corporate identity."
     }
+  },
+  "pricesView": {
+    "tableHeaders": ["Service", "READY OFFICE", "VIRTUAL OFFICE", "CO-WORKING OFFICE"],
+    "services": {
+      "legalAddress": {
+        "name": "Legal Address",
+        "availability": ["check", "check", "check"]
+      },
+      "mailCargoTracking": {
+        "name": "Mail and Cargo Tracking",
+        "availability": ["check", "check", "check"]
+      },
+      "telephoneLineAllocation": {
+        "name": "Telephone Line Allocation and Call Answering Service",
+        "availability": ["check", "check", "check"]
+      },
+      "useOfAllLocations": {
+        "name": "Access to All Locations",
+        "availability": ["check", "check", "check"]
+      },
+      "meetingRoomUsage": {
+        "name": "Meeting Room and Seminar Hall Usage",
+        "availability": ["check", "x", "check"]
+      },
+      "temporaryOffice": {
+        "name": "Hourly, Daily, Weekly Open/Closed Office",
+        "availability": ["check", "x", "check"]
+      },
+      "privateOffice": {
+        "name": "Private Office",
+        "availability": ["check", "x", "x"]
+      },
+      "availableDesk": {
+        "name": "Available Desk in Co-working Area",
+        "availability": ["x", "check", "check"]
+      },
+      "fixedDesk": {
+        "name": "Fixed Desk in Co-working Area",
+        "availability": ["x", "x", "check"]
+      },
+      "memberDiscounts": {
+        "name": "Member Discounts and Benefits",
+        "availability": ["check", "check", "check"]
+      },
+      "networkAccess": {
+        "name": "Access to 4000+ Network",
+        "availability": ["check", "check", "check"]
+      },
+      "lobbyUsage": {
+        "name": "Lobby Usage",
+        "availability": ["check", "check", "check"]
+      },
+      "highSpeedInternet": {
+        "name": "High-Speed Fiber Internet",
+        "availability": ["check", "check", "check"]
+      },
+      "freeDrinks": {
+        "name": "Free Hot Drinks and Water",
+        "availability": ["check", "check", "check"]
+      },
+      "kitchenUsage": {
+        "name": "Kitchen Usage",
+        "availability": ["x", "check", "x"]
+      },
+      "cleaningService": {
+        "name": "Cleaning Service",
+        "availability": ["x", "check", "check"]
+      },
+      "twentyFourSevenAccess": {
+        "name": "24/7 Access",
+        "availability": ["x", "check", "x"]
+      },
+      "eventsAndTrainings": {
+        "name": "Events and Discounted Trainings",
+        "availability": ["check", "check", "check"]
+      }
+    }
+  },
+  "sections": {
+    "heroAdvantage": {
+      "title": "Empowering Your Business with Exclusive Benefits and Advantages",
+      "list": [
+        "Flexible Rental Advantage",
+        "Networking Opportunities",
+        "Events and Activities",
+        "Meeting and Conference Halls"
+      ],
+      "modal": {
+        "subtitle": "You are just one step away from Akdeniz's prestigious and unrivaled locations!",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "E-Mail",
+        "selectAService": "Select A Service",
+        "message": "Message",
+        "company": "I want to establish a company."
+      }
+    },
+    "heroPlazaCount": {
+      "title": "Prestigious Offices in 58 A+ Plazas",
+      "content": "With our Flexible Rental Model, you can rent hourly, daily, weekly, or monthly, and take advantage of meeting rooms, seminar halls, ready offices, or coworking desks in Turkey's most prestigious locations."
+    },
+    "heroShareNetwork": {
+      "title": "Expand Your Network, Collaborate with All Akdeniz Business Center Members",
+      "content": "As a member of Akdeniz Business Center, you can share a network with 100+ professional companies and entrepreneurs, establish collaborations, and grow your business."
+    },
+    "heroActivity": {
+      "title": "Participate in Activities to Work, Socialize, and Have Fun",
+      "content": "Don't forget to socialize by attending various social gatherings, trainings, and workshops. Stay informed about events organized by different companies. You can develop yourself, meet new people with shared interests, expand your network, and seize opportunities to grow your business. With both work and fun-themed events, we stay motivated and continue to work."
+    },
+    "heroCall": {
+      "title": "Benefit from Call Answering and Forwarding Services",
+      "content": "By getting a dedicated phone line and number, you can take advantage of secretarial services, ensure the forwarding of incoming calls, and keep track of your mail and parcels arriving at your office."
+    },
+    "heroActivityPlace": {
+      "title": "We Have Prepared Venues for All Your Events",
+      "content": "As a privilege of being an Akdeniz Business Center member, you can use eOfis's event spaces for trainings, launches, cocktail parties, social gatherings, and celebrations. With more than 120 meeting and seminar halls, we are at your service for all kinds of events."
+    },
+    "whyAbc": {
+      "title": "Why Akdeniz Business Center?",
+      "listLeft": [
+        "2 Years of Experience in the Industry",
+        "Only A+ Prestigious Plazas",
+        "Continuously Expanding Location Network",
+        "Access to All Locations with a Single Contract",
+        "Strong Network with 100+ Companies",
+        "International Office Network",
+        "Best Prices in A+ Plazas"
+      ],
+      "listRight": [
+        "No Hidden Fees",
+        "Easy Access with Metro and Metrobus",
+        "Office Management via Mobile App",
+        "Advanced Call System",
+        "Transparent Management",
+        "120 Meeting and Seminar Halls",
+        "Launch Areas"
+      ]
+    }
+  },
+  "homeCoverCards": {
+    "virtualOffice": {
+      "title": "Virtual Office",
+      "subtitle": "Your office wherever you want it!"
+    },
+    "flexibleOffice": {
+      "title": "Flexible Office",
+      "subtitle": "The address you need for official procedures"
+    },
+    "coworkingOffice": {
+      "title": "Coworking",
+      "subtitle": "Work whenever and wherever you want"
+    }
+  },
+  "form": {
+    "name": "Name",
+    "phone": "Phone",
+    "email": "E-Mail",
+    "selectAService": "Select A Service",
+    "message": "Message",
+    "company": "I want to establish a company.",
+    "quotationForm": "Quotation Form"
+  },
+  "keywords": {
+    "virtualOffice": "Virtual Office",
+    "flexibleOffice": "Flexible Office",
+    "coworkingOffice": "Coworking",
+    "more": "More",
+    "callNow": "Call Now",
+    "prices": "Prices",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "home": "Home",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "getAnOfferNow": "Get An Offer Now",
+    "getAnOffer": "Get An Offer",
+    "address": "Address",
+    "phone": "Phone",
+    "contactUs": "Contact Us"
   }
 }

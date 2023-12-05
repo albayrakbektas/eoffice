@@ -1,8 +1,52 @@
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "HeroAdvantage",
   data() {
-    return {};
+    return {
+      sendForm: {
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        companyCheck: "",
+        message: "",
+      },
+      formStatus: null,
+      formMessage: "",
+    };
+  },
+  computed: {
+    heroAdvantage() {
+      return this.$t("sections.heroAdvantage");
+    },
+    form() {
+      return this.$t("form");
+    },
+  },
+  methods: {
+    sendEmail() {
+      emailjs
+        .sendForm(
+          "service_rynuoez",
+          "template_nqsxfcd",
+          this.$refs.form,
+          "oUm2aFG6SvqAvlfhB"
+        )
+        .then(
+          (result) => {
+            console.log("Email successfully sent!", result.status, result.text);
+            this.formStatus = "success";
+            this.formMessage = "Mesaj başarıyla gönderildi!";
+          },
+          (error) => {
+            console.log("Failed to send email:", error);
+            this.formStatus = "error";
+            this.formMessage = "Mesaj gönderilemedi, lütfen tekrar deneyin.";
+          }
+        );
+    },
   },
 };
 </script>
@@ -22,67 +66,24 @@ export default {
         </div>
 
         <div class="col-12 col-sm-6 col-lg-4 d-lg-none mobile_ozellikler2">
-          <h2 class="mb-2 mb-lg-5 h3-responsive text-sm-left text-center">
-            İşinize Güç Katan Ayrıcalıklar ve Avantajlar
+          <h2 class="my-3 mb-lg-5 h3-responsive text-sm-left text-center">
+            {{ heroAdvantage.title }}
           </h2>
-          <div class="row">
-            <div class="card mx-2 p-2 mb-1">
-              <a href="#ofisler" class="main_black-text smooth">
+          <div class="row mx-2">
+            <div
+              v-for="(item, index) in heroAdvantage.list"
+              :key="index"
+              class="card p-2 mb-1"
+            >
+              <a href="#" class="main_black-text smooth">
                 <div class="row">
-                  <div class="col-2">
-                    <i class="bi bi-check-circle-fill fs-3 text-success"></i>
+                  <div class="col-1">
+                    <i class="bi bi-check-circle-fill fs-3 text-primary"></i>
                   </div>
-                  <div class="col-9 d-flex align-items-center">
-                    <span class="feature-title my-0 font-weight-light"
-                      >Esnek Kiralama Avantajı</span
-                    >
-                  </div>
-                  <div
-                    class="col-1 d-flex align-items-center justify-content-center"
-                  >
-                    <i class="bi bi-chevron-right"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card mx-2 p-2 mb-1">
-              <a href="#networking" class="main_black-text smooth">
-                <div class="row">
-                  <div class="col-2">
-                    <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-                  </div>
-                  <div class="col-10 d-flex align-items-center">
-                    <span class="feature-title my-0 font-weight-light"
-                      >Networking İmkanları</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card mx-2 p-2 mb-1">
-              <a href="#eventler" class="main_black-text smooth">
-                <div class="row">
-                  <div class="col-2">
-                    <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-                  </div>
-                  <div class="col-10 d-flex align-items-center">
-                    <span class="feature-title my-0 font-weight-light"
-                      >Ayrıcalıklı Etkinlikler</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="card mx-2 p-2 mb-1">
-              <a href="#toplanti" class="main_black-text smooth">
-                <div class="row">
-                  <div class="col-2">
-                    <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-                  </div>
-                  <div class="col-10 d-flex align-items-center">
-                    <span class="feature-title my-0 font-weight-light"
-                      >Toplantı ve Konferans Salonları</span
-                    >
+                  <div class="col-11 d-flex align-items-center">
+                    <span class="feature-title my-0 font-weight-light">{{
+                      item
+                    }}</span>
                   </div>
                 </div>
               </a>
@@ -92,47 +93,165 @@ export default {
 
         <div class="col-12 col-sm-6 col-lg-4 d-none d-lg-block">
           <h2 class="mb-2 mb-lg-5 h3-responsive text-sm-left text-center">
-            İşinize Güç Katan Ayrıcalıklar ve Avantajlar
+            {{ heroAdvantage.title }}
           </h2>
-          <div class="row my-2 ml-4 ml-sm-0">
-            <div class="col-2">
-              <i class="bi bi-check-circle-fill fs-3 text-success"></i>
+          <div
+            v-for="(item, index) in heroAdvantage.list"
+            :key="index"
+            class="row my-2 ml-4 ml-sm-0"
+          >
+            <div class="col-1 d-flex justify-content-center align-items-center">
+              <i class="bi bi-check-circle-fill fs-3 text-primary"></i>
             </div>
-            <div class="col-10 d-flex align-items-center">
-              <p class="feature-title my-0">Esnek Kiralama Avantajı</p>
-            </div>
-          </div>
-          <div class="row my-2 ml-4 ml-sm-0">
-            <div class="col-2">
-              <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <p class="feature-title my-0">Networking İmkanları</p>
-            </div>
-          </div>
-          <div class="row my-2 ml-4 ml-sm-0">
-            <div class="col-2">
-              <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <p class="feature-title my-0">Eventler ve Etkinlikler</p>
-            </div>
-          </div>
-          <div class="row my-2 ml-4 ml-sm-0">
-            <div class="col-2">
-              <i class="bi bi-check-circle-fill fs-3 text-success"></i>
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <p class="feature-title my-0">Toplantı ve Konferans Salonları</p>
+            <div class="col-11 d-flex align-items-center">
+              <p class="feature-title my-0">{{ item }}</p>
             </div>
           </div>
           <a
             data-toggle="modal"
             data-target="#teklifform_popup"
             href="#"
-            class="btn btn-danger mt-3 mt-lg-5 d-none d-sm-block waves-effect waves-light"
-            >Hemen Teklif Al<i class="fa fa-file-text-o ml-2"></i
+            class="btn btn-danger mt-3 mt-lg-5 d-none d-sm-block"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="color: #fff !important"
+            >{{ $t("keywords.getAnOfferNow")
+            }}<i class="bi bi-file-text-o ml-2"></i
           ></a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="/img/siteLogo.jpeg"
+              style="height: 15vh; border-radius: 50%"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card-modal-title">Akdeniz Business Center</div>
+            <div class="card-modal-description mb-3">
+              {{ heroAdvantage.modal.subtitle }}
+            </div>
+            <form @submit.prevent="sendEmail" ref="form">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-person-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="sendForm.name"
+                  :placeholder="form.name"
+                  name="user_name"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-phone-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="sendForm.phone"
+                  :placeholder="form.phone"
+                  name="user_phone"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="sendForm.email"
+                  :placeholder="form.email"
+                  name="user_email"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <select
+                v-model="sendForm.service"
+                class="form-select mb-3"
+                aria-label="Default select example"
+              >
+                <option disabled value="">
+                  {{ $t("form.selectAService") }}
+                </option>
+                <option value="1">{{ $t("keywords.flexibleOffice") }}</option>
+                <option value="2">{{ $t("keywords.virtualOffice") }}</option>
+                <option value="3">{{ $t("keywords.coworkingOffice") }}</option>
+              </select>
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-left-text-fill"></i>
+                </span>
+                <textarea
+                  class="form-control"
+                  aria-label="Mesajınız..."
+                  v-model="sendForm.message"
+                  :placeholder="form.message + '...'"
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="form-check form-switch mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                  v-model="sendForm.companyCheck"
+                  name="company_check"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault">{{
+                  $t("form.company")
+                }}</label>
+              </div>
+              <div
+                v-if="formStatus === 'success'"
+                class="alert alert-success"
+                role="alert"
+              >
+                {{ formMessage }}
+              </div>
+
+              <!-- Hata Mesajı -->
+              <div
+                v-if="formStatus === 'error'"
+                class="alert alert-danger"
+                role="alert"
+              >
+                {{ formMessage }}
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-danger">
+                  {{ $t("keywords.getAnOffer")
+                  }}<i class="bi bi-file-text-o ml-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -183,5 +302,20 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.modal-header {
+  background-image: url("/public/img/mersin_sahil.jpeg");
+  height: 20vh;
+  align-items: start !important;
+}
+.card-modal-title {
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+  font-size: 22px;
+}
+.card-modal-description {
+  text-align: center;
+  font-size: 14px;
 }
 </style>

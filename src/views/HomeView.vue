@@ -9,12 +9,10 @@
     <HeroCall />
     <HeroActivityPlace />
     <WhyEOffice />
-    <SSS />
   </div>
 </template>
 
 <script>
-import SSS from "@/views/SssView.vue";
 import HeroPlazaCount from "@/components/HeroPlazaCount.vue";
 import HeroShareNetwork from "@/components/HeroShareNetwork.vue";
 import HeroActivity from "@/components/HeroActivity.vue";
@@ -37,7 +35,6 @@ export default {
     HeroActivity,
     HeroShareNetwork,
     HeroPlazaCount,
-    SSS,
   },
 };
 </script>

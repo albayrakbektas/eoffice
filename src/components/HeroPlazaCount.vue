@@ -7,6 +7,11 @@ export default {
       imageContentAnimation: "",
     };
   },
+  computed: {
+    heroPlazaCount() {
+      return this.$t("sections.heroPlazaCount");
+    },
+  },
   mounted() {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
@@ -32,20 +37,11 @@ export default {
           class="text-white py-3 py-sm-5 mt-0 mb-0 mt-lg-3 mb-lg-5 text-sm-left text-center"
         >
           <h2 class="mt-3 mt-lg-5 mb-3 mb-lg-4 h3-responsive">
-            58 A+ Plazada Prestijli Ofisler
+            {{ heroPlazaCount.title }}
           </h2>
-          <p>
-            <b>Esnek Kiralama Modeli</b> ile, saatlik, günlük, haftalık ya da
-            aylık kiralamalar yapabilir, Türkiyen'nin en prestijli
-            lokasyonlarında, işinize uygun toplantı odası, seminer salonu, hazır
-            ofis ya da ortak ofiste çalışma masası imkanlarından
-            faydalanabilirsiniz.
+          <p style="color: #fff !important">
+            {{ heroPlazaCount.content }}
           </p>
-          <a
-            href="/lokasyonlar"
-            class="btn btn-red mt-3 mt-lg-5 mb-3 mb-lg-5 d-none waves-effect waves-light"
-            >Tüm Ofisleri İncele<i class="fa fa-send ml-2"></i
-          ></a>
         </div>
       </div>
 
@@ -56,9 +52,7 @@ export default {
       >
         <div
           class="full_back_image"
-          style="
-            background-image: url('//www.eofis.com.tr/ass/img/prestijli-ofis.webp');
-          "
+          style="background-image: url('/img/private_office.jpeg')"
         ></div>
       </div>
     </div>

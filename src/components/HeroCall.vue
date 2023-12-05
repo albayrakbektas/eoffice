@@ -1,6 +1,11 @@
 <script>
 export default {
   name: "HeroCall",
+  computed: {
+    heroCall() {
+      return this.$t("sections.heroCall");
+    },
+  },
 };
 </script>
 
@@ -25,12 +30,10 @@ export default {
           class="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5 pt-0 pt-lg-5 text-md-start text-lg-start text-center"
         >
           <h2 class="mt-0 mt-lg-4 mb-3 mb-lg-5 h3-responsive">
-            Çağrı Karşılama ve Aktarma Hizmetinden Faydalanın
+            {{ heroCall.title }}
           </h2>
           <p>
-            Size özel telefon ve hat tahsisi yaptırarak, sekretarya hizmetinden
-            faydalanabilir, gelen aramaları aktarılmasını sağlayabilir,
-            ofisinize gelen posta ve kargolarınızın takibini yapabilirsiniz.
+            {{ heroCall.content }}
           </p>
         </div>
       </div>

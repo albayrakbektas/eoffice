@@ -1,9 +1,52 @@
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "TeklfAlButonu",
+  data() {
+    return {
+      initialTop: 0,
+      sendForm: {
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        companyCheck: "",
+        message: "",
+      },
+      formStatus: null,
+      formMessage: "",
+    };
+  },
   computed: {
     isMobile() {
       return this.$store.getters.isMobile;
+    },
+    form() {
+      return this.$t("form");
+    },
+  },
+  methods: {
+    sendEmail() {
+      emailjs
+        .sendForm(
+          "service_rynuoez",
+          "template_nqsxfcd",
+          this.$refs.form,
+          "oUm2aFG6SvqAvlfhB"
+        )
+        .then(
+          (result) => {
+            console.log("Email successfully sent!", result.status, result.text);
+            this.formStatus = "success";
+            this.formMessage = "Mesaj başarıyla gönderildi!";
+          },
+          (error) => {
+            console.log("Failed to send email:", error);
+            this.formStatus = "error";
+            this.formMessage = "Mesaj gönderilemedi, lütfen tekrar deneyin.";
+          }
+        );
     },
   },
 };
@@ -18,7 +61,7 @@ export default {
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
-      Teklif Al
+      {{ $t("keywords.getAnOffer") }}
       <i class="bi bi-file-earmark-text"></i>
     </button>
 
@@ -33,64 +76,132 @@ export default {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header d-block text-center">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <div class="card-modal-description">
-              eOfis'in <strong>prestijli ve rakipsiz</strong> lokasyonlarına 1
+            <img
+              src="/img/siteLogo.jpeg"
+              style="height: 70px; width: 70px; border-radius: 50%"
+              alt="Site Logo"
+            />
+            <button
+              style="float: right"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="card-modal-title">Akdeniz Business Center</div>
+            <div class="card-modal-description mb-3">
+              Akdeniz'in <strong>prestijli ve rakipsiz</strong> lokasyonlarına 1
               adım uzaktasınız!
             </div>
           </div>
           <div class="modal-body">
-            <form class="row g-3">
-              <div class="col-6 col-md-6">
-                <label for="inputEmail4" class="form-label">Ad</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-              </div>
-              <div class="col-6 col-md-6">
-                <label for="inputPassword4" class="form-label">Soyad</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword4"
-                />
-              </div>
-              <div class="col-6">
-                <label for="inputAddress" class="form-label">Telefon</label>
+            <form @submit.prevent="sendEmail" ref="form">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-person-fill"></i
+                ></span>
                 <input
                   type="text"
                   class="form-control"
-                  id="inputAddress"
-                  placeholder=""
+                  v-model="sendForm.name"
+                  :placeholder="form.name"
+                  name="user_name"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="col-6">
-                <label for="inputAddress2" class="form-label">Eposta</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-phone-fill"></i>
+                </span>
                 <input
                   type="text"
                   class="form-control"
-                  id="inputAddress2"
-                  placeholder=""
+                  v-model="sendForm.phone"
+                  :placeholder="form.phone"
+                  name="user_phone"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
                 />
               </div>
-              <div class="col-12">
-                <label for="inputCity" class="form-label">Mesajiniz</label>
-                <input type="text" class="form-control" id="inputCity" />
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="sendForm.email"
+                  :placeholder="form.email"
+                  name="user_email"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
               </div>
-              <div class="col-12">
-                <label for="inputState" class="form-label">Hizmet Secin</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+                v-model="sendForm.service"
+                name="service"
+              >
+                <option selected value="">
+                  {{ $t("form.selectAService") }}
+                </option>
+                <option value="Flexible Office">
+                  {{ $t("keywords.flexibleOffice") }}
+                </option>
+                <option value="Virtual Office">
+                  {{ $t("keywords.virtualOffice") }}
+                </option>
+                <option value="Coworking Office">
+                  {{ $t("keywords.coworkingOffice") }}
+                </option>
+              </select>
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-left-text-fill"></i>
+                </span>
+                <textarea
+                  class="form-control"
+                  aria-label="Mesajınız..."
+                  v-model="sendForm.message"
+                  :placeholder="form.message + '...'"
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="form-check form-switch mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                  v-model="sendForm.companyCheck"
+                  name="company_check"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault">{{
+                  $t("form.company")
+                }}</label>
               </div>
               <div
-                class="col-12 d-flex align-items-center justify-content-center"
+                v-if="formStatus === 'success'"
+                class="alert alert-success"
+                role="alert"
               >
-                <button
-                  type="submit"
-                  class="btn btn-danger rounded-0 mx-auto"
-                  data-bs-dismiss="modal"
-                >
-                  Teklif Al
+                {{ formMessage }}
+              </div>
+
+              <!-- Hata Mesajı -->
+              <div
+                v-if="formStatus === 'error'"
+                class="alert alert-danger"
+                role="alert"
+              >
+                {{ formMessage }}
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-danger">
+                  {{ $t("keywords.getAnOffer")
+                  }}<i class="bi bi-file-text-o ml-2"></i>
                 </button>
               </div>
             </form>

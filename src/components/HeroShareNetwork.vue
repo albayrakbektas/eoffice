@@ -1,6 +1,11 @@
 <script>
 export default {
   name: "HeroShareNetwork",
+  computed: {
+    heroShareNetwork() {
+      return this.$t("sections.heroShareNetwork");
+    },
+  },
 };
 </script>
 
@@ -25,11 +30,10 @@ export default {
           class="col-12 col-sm-6 col-lg-4 mt-0 mt-lg-5 pt-3 pt-lg-5 text-lg-left text-center"
         >
           <h2 class="mt-0 mt-lg-5 mb-3 mb-lg-5 h3-responsive">
-            Networkünüzü Genişletin, Tüm eOfis Üyeleri ile İşbirliği Yapın
+            {{ heroShareNetwork.title }}
           </h2>
           <p>
-            eOfis üyesi 10000+ profesyonel şirket ve girişimci ile aynı networkü
-            paylaşarak, iş birlikleri kurabilir ve işinizi büyütebilirsiniz.
+            {{ heroShareNetwork.content }}
           </p>
         </div>
       </div>

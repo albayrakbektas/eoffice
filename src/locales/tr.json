@@ -147,5 +147,184 @@
       "title": "Vizyonumuz",
       "subtitle": "Son yıllarda gittikçe büyüyen Hazır ofis ve Sanal ofis sektörünün en çok tercih edilen ve müşterilerine en kaliteli hizmeti veren Hazır ofis şirketi olmak. Akdeniz Business Center olarak hızlı ve emin adımlarla ilerlerken kurumsal bir kimlikle başta Türkiye olmak üzere tüm Dünyada bir marka haline gelmek."
     }
+  },
+  "pricesView": {
+    "tableHeaders": ["Hizmet", "HAZIR OFİS", "SANAL OFİS", "ORTAK OFİS"],
+    "services": {
+      "legalAddress": {
+        "name": "Yasal Adres",
+        "availability": ["check", "check", "check"]
+      },
+      "mailCargoTracking": {
+        "name": "Posta ve Kargo Takibi",
+        "availability": ["check", "check", "check"]
+      },
+      "telephoneLineAllocation": {
+        "name": "Telefon Hattı Tahsisi ve Çağrı Karşılama Hizmeti",
+        "availability": ["check", "check", "check"]
+      },
+      "useOfAllLocations": {
+        "name": "Tüm Lokasyonları Kullanma Fırsatı",
+        "availability": ["check", "check", "check"]
+      },
+      "meetingRoomUsage": {
+        "name": "Toplantı Odası ve Seminer Salonu Kullanımı",
+        "availability": ["check", "x", "check"]
+      },
+      "temporaryOffice": {
+        "name": "Saatlik, Günlük, Haftalık Açık/Kapalı Ofis",
+        "availability": ["check", "x", "check"]
+      },
+      "privateOffice": {
+        "name": "Özel Ofis",
+        "availability": ["check", "x", "x"]
+      },
+      "availableDesk": {
+        "name": "Ortak Ofis Alanında Müsait Masa Kullanımı",
+        "availability": ["x", "check", "check"]
+      },
+      "fixedDesk": {
+        "name": "Ortak Ofis Alanında Sabit Masa Kullanımı",
+        "availability": ["x", "x", "check"]
+      },
+      "memberDiscounts": {
+        "name": "Üyelerin Sunduğu İndirim ve Avantajlar",
+        "availability": ["check", "check", "check"]
+      },
+      "networkAccess": {
+        "name": "4000+ Ağ Erişimi",
+        "availability": ["check", "check", "check"]
+      },
+      "lobbyUsage": {
+        "name": "Lobi Kullanımı",
+        "availability": ["check", "check", "check"]
+      },
+      "highSpeedInternet": {
+        "name": "Yüksek Hızda Fiber İnternet",
+        "availability": ["check", "check", "check"]
+      },
+      "freeDrinks": {
+        "name": "Ücretsiz Sıcak İçecekler ve Su",
+        "availability": ["check", "check", "check"]
+      },
+      "kitchenUsage": {
+        "name": "Mutfak Kullanımı",
+        "availability": ["x", "check", "x"]
+      },
+      "cleaningService": {
+        "name": "Temizlik Hizmeti",
+        "availability": ["x", "check", "check"]
+      },
+      "twentyFourSevenAccess": {
+        "name": "7/24 Kullanım",
+        "availability": ["x", "check", "x"]
+      },
+      "eventsAndTrainings": {
+        "name": "Etkinlikler ve İndirimli Eğitimler",
+        "availability": ["check", "check", "check"]
+      }
+    }
+  },
+  "sections": {
+    "heroAdvantage": {
+      "title": "İşinize Güç Katan Ayrıcalıklar ve Avantajlar",
+      "list": [
+        "Esnek Kiralama Avantajı",
+        "Networking İmkanları",
+        "Eventler ve Etkinlikler",
+        "Toplantı ve Konferans Salonları"
+      ],
+      "modal": {
+        "subtitle": "Akdeniz'in prestijli ve rakipsiz lokasyonlarına 1 adım uzaktasınız!",
+        "name": "İsim",
+        "phone": "Telefon",
+        "email": "E-Posta",
+        "selectAService": "Bir Servis Seçin",
+        "message": "Mesajınız",
+        "company": "Şirket kurulumu istiyorum"
+      }
+    },
+    "heroPlazaCount": {
+      "title": "58 A+ Plazada Prestijli Ofisler",
+      "content": "Esnek Kiralama Modeli ile, saatlik, günlük, haftalık ya da aylık kiralamalar yapabilir, Türkiyen'nin en prestijli lokasyonlarında, işinize uygun toplantı odası, seminer salonu, hazır ofis ya da ortak ofiste çalışma masası imkanlarından faydalanabilirsiniz."
+    },
+    "heroShareNetwork": {
+      "title": "Networkünüzü Genişletin, Tüm Akdeniz Business Center Üyeleri ile İşbirliği Yapın",
+      "content": "Akdeniz Business Center üyesi 100+ profesyonel şirket ve girişimci ile aynı networkü paylaşarak, iş birlikleri kurabilir ve işinizi büyütebilirsiniz."
+    },
+    "heroActivity": {
+      "title": "Etkinliklere Katılarak Hem İş Yapın, Hem de Eğlenerek Sosyalleşin",
+      "content": "Birçok sosyal buluşma, eğitimler ve çalışma atölyeleri düzenleyerek sosyalleşmeyi de unutmayın. Farklı firmalar tarafından düzenlenen etkinliklerden haberdar olarak, kendinizi geliştirebilir, ilgi alanlarınızın kesiştiği yeni insanlarla bir araya gelerek sosyalleşebilir, böylelikle çevrenizi genişletebilme ve işinizi büyütme fırsatlarından yararlanabilirsiniz.\n\nHem iş hem eğlence konseptli organizasyonlarla motivasyonumuz tam, işe devam."
+    },
+    "heroCall": {
+      "title": "Çağrı Karşılama ve Aktarma Hizmetinden Faydalanın",
+      "content": "Size özel telefon ve hat tahsisi yaptırarak, sekretarya hizmetinden faydalanabilir, gelen aramaları aktarılmasını sağlayabilir, ofisinize gelen posta ve kargolarınızın takibini yapabilirsiniz."
+    },
+    "heroActivityPlace": {
+      "title": "Her Türlü Etkinlikleriniz İçin Mekanları Hazırladık",
+      "content": "Eğitim, Lansman, Kokteyl organizasyonları, sosyal buluşma ve kutlamalarınız için eOfis’in etkinlik alanlarını, Akdeniz Business Center üyesi  olmanın ayrıcalığı ile kullanabilirsiniz. 120'den fazla toplantı ve seminer salonu, her türlü etkinliğiniz için emrinizde."
+    },
+    "whyAbc": {
+      "title": "Neden Akdeniz Business Center?",
+      "listLeft": [
+        "Sektörde 2 Yıllık Tecrübe",
+        "Sadece A+ Prestijli Plazalar",
+        "Sürekli Artan Lokasyon Ağı",
+        "Tek Sözleşmeyle Tüm Lokasyonları Kullanma İmkanı",
+        "100+ Firmalı Güçlü Network Ağı",
+        "Uluslararası Ofis Ağı",
+        "A+ Plazalarda En İyi Fiyat"
+      ],
+      "listRight": [
+        "Sürpriz Ücret Yok",
+        "Metro ve Metrobüs ile Kolay Ulaşım",
+        "Mobil Uygulama ile Ofis Yönetimi",
+        "Gelişmiş Çağrı Sistemi",
+        "Şeffaf Yönetim",
+        "120 Adet Toplantı ve Seminer Salonu",
+        "Lansman Alanları"
+      ]
+    }
+  },
+  "homeCoverCards": {
+    "virtualOffice": {
+      "title": "Sanal Ofis",
+      "subtitle": "Ofisiniz nerede isterseniz orada!"
+    },
+    "flexibleOffice": {
+      "title": "Hazır Ofis",
+      "subtitle": "Resmi işlemler için ihtiyacınız olan adres"
+    },
+    "coworkingOffice": {
+      "title": "Paylaşımlı Ofis",
+      "subtitle": "Dilediğin zaman dilediğin yerde çalış"
+    }
+  },
+  "form": {
+    "name": "İsim",
+    "phone": "Telefon",
+    "email": "E-Posta",
+    "selectAService": "Bir Servis Seçin",
+    "message": "Mesajınız",
+    "company": "Şirket kurulumu istiyorum",
+    "quotationForm": "Teklif Formu"
+  },
+  "keywords": {
+    "virtualOffice": "Sanal Ofis",
+    "flexibleOffice": "Hazır Ofis",
+    "coworkingOffice": "Paylaşımlı Ofis",
+    "more": "Incele",
+    "callNow": "Hemen Ara",
+    "prices": "Fiyatlar",
+    "aboutUs": "Hakkımızda",
+    "services": "Hizmetler",
+    "home": "Anasayfa",
+    "contact": "İletişim",
+    "faq": "SSS",
+    "getAnOfferNow": "Hemen Teklif Al",
+    "getAnOffer": "Teklif Al",
+    "address": "Adres",
+    "phone": "Telefon",
+    "contactUs": "Bizimle İletişime Geçin"
   }
 }

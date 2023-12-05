@@ -28,7 +28,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .h3-responsive {
   font-size: 135%;
 }
@@ -44,7 +43,36 @@ body {
     font-size: 140%;
   }
 }
-
+// title -> 13, 60, 85, 1
+// text -> 50, 50, 50, 1
+// background -> 245, 245, 245, 1
+// links -> 0, 123, 255, 1
+// icons -> 30, 136, 229, 1
+// bold -> 255, 167, 38, 1
+.custom-text,
+p {
+  color: rgba(50, 50, 50, 1) !important;
+}
+.custom-bg {
+  color: rgba(245, 245, 245, 1) !important;
+}
+.custom-link,
+a {
+  color: rgba(128, 0, 32, 1) !important;
+  &:hover {
+    color: rgba(153, 31, 47, 1) !important;
+  }
+}
+.custom-icon {
+  color: rgba(30, 136, 229, 1) !important;
+}
+.custom-bold {
+  color: rgba(255, 167, 38, 1) !important;
+}
+h1,
+.custom-title {
+  color: rgba(13, 60, 85, 1) !important;
+}
 .h1-responsive {
   font-size: 200%;
 }

@@ -1,7 +1,11 @@
 <script>
 export default {
   name: "HomeFooter",
-  computed: {},
+  computed: {
+    keywords() {
+      return this.$t("keywords");
+    },
+  },
   methods: {
     footerOffset() {
       let footer = this.$refs.footer;
@@ -18,49 +22,88 @@ export default {
     <div class="container text-start text-md-left mt-5">
       <div class="row mt-3">
         <div class="col-12 col-md-4 col-lg-4 mx-auto mb-4">
-          <div class="text-uppercase font-weight-bold">
+          <div
+            class="text-uppercase font-weight-bold"
+            style="color: rgba(13, 60, 85, 1)"
+          >
             Akdeniz Business Center
           </div>
           <hr
-            class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 15rem"
+            class="mb-3 mt-0 d-inline-block mx-auto"
+            style="width: 15rem; color: rgba(0, 123, 255, 1)"
           />
-          <p>
+          <p style="color: rgba(50, 50, 50, 1) !important">
             Akdeniz Business Center, girişimcilere, serbest meslek
             çalışanlarına, kobilere ve kurumsal firmalara, 2020'den bu yana
             çalışma alanları çözümleri sunuyor
           </p>
+        </div>
+
+        <div class="col-4 col-md-2 col-lg-2 offset-lg-2 mb-4">
+          <div
+            class="text-uppercase font-weight-bold"
+            style="color: rgba(13, 60, 85, 1)"
+          >
+            Kurumsal
+          </div>
+          <hr
+            class="mb-3 mt-0 d-inline-block mx-auto"
+            style="width: 60px; color: rgba(0, 123, 255, 1)"
+          />
           <p>
-            <a href="/ozel-ofisler"
-              ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Size Özel
-              Ofisler</a
-            >
+            <a href="/">{{ keywords.home }}</a>
           </p>
-          <!--          <p>-->
-          <!--            <a href="/bloglar"-->
-          <!--              ><i class="fa fa-hand-o-right" aria-hidden="true"></i> Blog-->
-          <!--              Yazıları</a-->
-          <!--            >-->
-          <!--          </p>-->
+          <p>
+            <a href="/hakkimizda">{{ keywords.aboutUs }}</a>
+          </p>
+          <p>
+            <a href="/iletisim">{{ keywords.contact }}</a>
+          </p>
         </div>
 
-        <div class="col-6 col-md-2 col-lg-2 offset-lg-2 mb-4">
-          <div class="text-uppercase font-weight-bold">Kurumsal</div>
+        <div class="col-4 col-md-2 col-lg-2 mb-4">
+          <div
+            class="text-uppercase font-weight-bold"
+            style="color: rgba(13, 60, 85, 1)"
+          >
+            Erişim
+          </div>
           <hr
-            class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 60px"
+            class="mb-3 mt-0 d-inline-block mx-auto"
+            style="width: 60px; color: rgba(0, 123, 255, 1)"
           />
-          <p><a href="/hakkimizda">Hakkımızda</a></p>
-        </div>
 
-        <div class="col-6 col-md-2 col-lg-2 mb-4">
-          <div class="text-uppercase font-weight-bold">Erişim</div>
+          <p>
+            <a href="/hazir-ofis">{{ keywords.flexibleOffice }}</a>
+          </p>
+          <p>
+            <a href="/sanal-ofis">{{ keywords.virtualOffice }}</a>
+          </p>
+          <p>
+            <a href="/co-working">{{ keywords.coworkingOffice }}</a>
+          </p>
+        </div>
+        <div class="col-4 col-md-2 col-lg-2 mb-4">
+          <div
+            class="text-uppercase font-weight-bold"
+            style="color: rgba(13, 60, 85, 1)"
+          >
+            Erişim
+          </div>
           <hr
-            class="red darken-3 mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 60px"
+            class="mb-3 mt-0 d-inline-block mx-auto"
+            style="width: 60px; color: rgba(13, 60, 85, 1)"
           />
-          <p><a href="/iletisim">İletişim</a></p>
-          <p><a href="/sss">SSS</a></p>
+
+          <p>
+            <a href="/hazir-ofis">{{ keywords.flexibleOffice }}</a>
+          </p>
+          <p>
+            <a href="/sanal-ofis">{{ keywords.virtualOffice }}</a>
+          </p>
+          <p>
+            <a href="/co-working">{{ keywords.coworkingOffice }}</a>
+          </p>
         </div>
       </div>
     </div>
@@ -69,11 +112,16 @@ export default {
       <div class="container">
         <div class="row pb-5 pb-lg-0 d-flex align-items-center">
           <div
-            class="col-12 col-md-12 col-lg-12 text-center text-md-left mb-4 mb-md-0"
+            class="col-12 col-md-12 col-lg-12 text-center text-md-left mb-md-0"
           >
             <div class="mb-0">
-              © 2023 Copyright
-              <a href="/">Akdeniz Business Center</a>
+              <span style="color: rgba(50, 50, 50, 1)">© 2023 Copyright</span>
+              <a
+                class="fw-bolder mx-2"
+                style="color: rgba(13, 60, 85, 1)"
+                href="/"
+                >Akdeniz Business Center</a
+              >
             </div>
           </div>
         </div>
@@ -84,7 +132,7 @@ export default {
 
 <style scoped lang="scss">
 .page-footer {
-  background-color: #263238;
+  background-color: rgba(245, 245, 245, 1);
 }
 footer.page-footer {
   bottom: 0;

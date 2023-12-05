@@ -1,11 +1,16 @@
 <script>
 export default {
-  name: "HeroPlazaCount",
+  name: "HeroActivityPlace",
   data() {
     return {
       textContentAnimation: "",
       imageContentAnimation: "",
     };
+  },
+  computed: {
+    heroActivityPlace() {
+      return this.$t("sections.heroActivityPlace");
+    },
   },
   mounted() {
     const observer = new IntersectionObserver((entries) => {
@@ -32,13 +37,10 @@ export default {
           class="text-white p-3 p-sm-5 mt-0 mb-0 mt-lg-3 mb-lg-5 text-center text-md-start"
         >
           <h2 class="mt-3 mt-lg-5 mb-3 mb-lg-4 h3-responsive">
-            Her Türlü Etkinlikleriniz İçin Mekanları Hazırladık
+            {{ heroActivityPlace.title }}
           </h2>
-          <p>
-            Eğitim, Lansman, Kokteyl organizasyonları, sosyal buluşma ve
-            kutlamalarınız için eOfis’in etkinlik alanlarını, eOfis üyesi
-            olmanın ayrıcalığı ile kullanabilirsiniz. 120'den fazla toplantı ve
-            seminer salonu, her türlü etkinliğiniz için emrinizde.
+          <p style="color: #fff !important">
+            {{ heroActivityPlace.content }}
           </p>
         </div>
       </div>
@@ -50,9 +52,7 @@ export default {
       >
         <div
           class="full_back_image"
-          style="
-            background-image: url('//www.eofis.com.tr/ass/img/kokteyl.webp');
-          "
+          style="background-image: url('/img/networking_event.jpeg')"
         ></div>
       </div>
     </div>

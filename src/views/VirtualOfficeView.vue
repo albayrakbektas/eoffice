@@ -1,10 +1,22 @@
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "VirtualOfficeView",
   components: {},
   data() {
     return {
       initialTop: 0,
+      sendForm: {
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        companyCheck: "",
+        message: "",
+      },
+      formStatus: null,
+      formMessage: "",
     };
   },
   created() {
@@ -34,15 +46,51 @@ export default {
       const middle = Math.ceil(this.services.length / 2);
       return this.services.slice(middle);
     },
+    form() {
+      return this.$t("form");
+    },
   },
   methods: {
+    sendEmail() {
+      emailjs
+        .sendForm(
+          "service_rynuoez",
+          "template_nqsxfcd",
+          this.$refs.form,
+          "oUm2aFG6SvqAvlfhB"
+        )
+        .then(
+          (result) => {
+            console.log("Email successfully sent!", result.status, result.text);
+            this.formStatus = "success";
+            this.formMessage = "Mesaj başarıyla gönderildi!";
+          },
+          (error) => {
+            console.log("Failed to send email:", error);
+            this.formStatus = "error";
+            this.formMessage = "Mesaj gönderilemedi, lütfen tekrar deneyin.";
+          }
+        );
+    },
     isSticky() {
       let form = this.$refs.form;
+      let cont = this.$refs.cont;
+      let section = this.$refs.section;
       if (!form) return;
-      if (window.pageYOffset > this.initialTop - 75) {
+      if (window.pageYOffset > this.initialTop - 85) {
         form.classList.add("sticky");
       } else {
         form.classList.remove("sticky");
+      }
+      if (
+        window.pageYOffset - form.getBoundingClientRect().bottom >=
+        cont.getBoundingClientRect().bottom
+      ) {
+        form.classList.add("fixed-to-bottom");
+        section.classList.add("position-relative");
+      } else {
+        form.classList.remove("fixed-to-bottom");
+        section.classList.remove("position-relative");
       }
     },
   },
@@ -54,9 +102,10 @@ export default {
     <div
       class="position-relative"
       style="
-        background-image: url('https://picsum.photos/1200');
+        background-image: url('/img/virtual_office.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         height: 50vh;
         width: 100vw;
       "
@@ -74,24 +123,28 @@ export default {
         "
       >
         <div class="row">
-          <div class="col-12 col-lg-7 text-white text-left mb-2 mb-lg-3">
+          <div
+            class="col-12 col-lg-7 py-2 bg-white bg-opacity-50 text-white text-left mb-2 mb-lg-3"
+          >
             <h1
-              class="slogan_1 font-weight-bold mb-1 mb-lg-2 text-center text-md-start"
+              class="slogan_1 fw-bolder mb-1 mb-lg-2 text-center text-md-start"
             >
               {{ $t("virtualOffices.title") }}
             </h1>
             <!--            <div class="slogan_2 mb-2 mb-lg-3">-->
             <!--              İhtiyacınıza Yönelik Esnek Ofis Çözümleri-->
             <!--            </div>-->
-            <p class="slogan_3 mb-1 mb-lg-2 fw-bold text-center text-md-start">
+            <p
+              class="slogan_3 mb-1 mb-lg-2 fw-bold text-black text-center text-md-start"
+            >
               {{ $t("virtualOffices.subtitle") }}
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <section class="pt-1 mb-3 pt-lg-5">
+    <div ref="cont" class="container">
+      <section ref="section" class="pt-1 mb-3 pt-lg-5">
         <div class="row">
           <div class="col-12 col-lg-7 mt-3 mt-md-0">
             <div class="mb-0">
@@ -139,7 +192,7 @@ export default {
                         class="col-2 d-flex justify-content-center align-items-center"
                       >
                         <i
-                          class="bi bi-check-circle-fill fs-3 text-success"
+                          class="bi bi-check-circle-fill fs-3 text-primary"
                         ></i>
                       </div>
                       <div
@@ -168,7 +221,7 @@ export default {
                         class="col-2 d-flex justify-content-center align-items-center"
                       >
                         <i
-                          class="bi bi-check-circle-fill fs-3 text-success"
+                          class="bi bi-check-circle-fill fs-3 text-primary"
                         ></i>
                       </div>
                       <div
@@ -221,245 +274,136 @@ export default {
                     </div>
                   </div>
                 </div>
-                <!--                <div class="col-12">-->
-                <!--                  <h2 class="services-title">Diğer Hizmetlerimiz</h2>-->
-                <!--                  <div class="row">-->
-                <!--                    <div class="col-lg-6 col-md-6 col-sm-12">-->
-                <!--                      <div class="card card-personal mb-4 services-card">-->
-                <!--                        <div class="view cardimage">-->
-                <!--                          <img-->
-                <!--                            class="card-img-top"-->
-                <!--                            src="//www.eofis.com.tr/ass/img/hizmet/3-toplanti-odasi.jpg"-->
-                <!--                            alt="Toplantı Odası"-->
-                <!--                          />-->
-                <!--                          <a href="/toplanti-odasi">-->
-                <!--                            <div-->
-                <!--                              class="mask rgba-black-slight waves-effect waves-light"-->
-                <!--                            ></div>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-
-                <!--                        <div class="card-body">-->
-                <!--                          <a href="/toplanti-odasi" class="main_red-text">-->
-                <!--                            <div class="card-title">Toplantı Odası</div>-->
-                <!--                          </a>-->
-
-                <!--                          <p class="card-meta font-weight-bold">-->
-                <!--                            Saatlik, günlük, haftalık, aylık...-->
-                <!--                          </p>-->
-
-                <!--                          <p class="card-text freeheight cardaciklama">-->
-                <!--                            eOfis Toplantı Salonlarımız, Türkiye’de 13 şehirde-->
-                <!--                            55 lokasyonda kolaylıkla ulaşabileceğiniz, merkezi-->
-                <!--                            bölgelerde...-->
-                <!--                          </p>-->
-                <!--                          <hr />-->
-
-                <!--                          <a-->
-                <!--                            href="/toplanti-odasi"-->
-                <!--                            class="btn main_red-text d-flex justify-content-end z-depth-0 p-0 waves-effect waves-light"-->
-                <!--                          >-->
-                <!--                            <span>Detaylı İncele</span-->
-                <!--                            ><span-->
-                <!--                              ><i class="fa fa-chevron-right pl-2"></i-->
-                <!--                            ></span>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                    <div class="col-lg-6 col-md-6 col-sm-12">-->
-                <!--                      <div class="card card-personal mb-4 services-card">-->
-                <!--                        <div class="view cardimage">-->
-                <!--                          <img-->
-                <!--                            class="card-img-top"-->
-                <!--                            src="//www.eofis.com.tr/ass/img/hizmet/14-sanal-ofis.jpg"-->
-                <!--                            alt="Sanal Ofis"-->
-                <!--                          />-->
-                <!--                          <a href="/sanal-ofis">-->
-                <!--                            <div-->
-                <!--                              class="mask rgba-black-slight waves-effect waves-light"-->
-                <!--                            ></div>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-
-                <!--                        <div class="card-body">-->
-                <!--                          <a href="/sanal-ofis" class="main_red-text">-->
-                <!--                            <div class="card-title">Sanal Ofis</div>-->
-                <!--                          </a>-->
-
-                <!--                          <p class="card-meta font-weight-bold">-->
-                <!--                            Aylık 600 TL' den başlayan fiyatlarla...-->
-                <!--                          </p>-->
-
-                <!--                          <p class="card-text freeheight cardaciklama">-->
-                <!--                            İş yapmak için asıl ihtiyacınız fiziki bir ofis-->
-                <!--                            değilse, sanal ofistir. Çok hesaplı bir paket olan-->
-                <!--                            Sanal Ofis ...-->
-                <!--                          </p>-->
-                <!--                          <hr />-->
-
-                <!--                          <a-->
-                <!--                            href="/sanal-ofis"-->
-                <!--                            class="btn main_red-text d-flex justify-content-end z-depth-0 p-0 waves-effect waves-light"-->
-                <!--                          >-->
-                <!--                            <span>Detaylı İncele</span-->
-                <!--                            ><span-->
-                <!--                              ><i class="fa fa-chevron-right pl-2"></i-->
-                <!--                            ></span>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                    <div class="col-lg-6 col-md-6 col-sm-12">-->
-                <!--                      <div class="card card-personal mb-4 services-card">-->
-                <!--                        <div class="view cardimage">-->
-                <!--                          <img-->
-                <!--                            class="card-img-top"-->
-                <!--                            src="//www.eofis.com.tr/ass/img/hizmet/21-ortak-ofis.jpg"-->
-                <!--                            alt="Paylaşımlı Ofis (Ortak Ofis)"-->
-                <!--                          />-->
-                <!--                          <a href="/ortak-ofis">-->
-                <!--                            <div-->
-                <!--                              class="mask rgba-black-slight waves-effect waves-light"-->
-                <!--                            ></div>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-
-                <!--                        <div class="card-body">-->
-                <!--                          <a href="/ortak-ofis" class="main_red-text">-->
-                <!--                            <div class="card-title">-->
-                <!--                              Paylaşımlı Ofis (Ortak Ofis)-->
-                <!--                            </div>-->
-                <!--                          </a>-->
-
-                <!--                          <p class="card-meta font-weight-bold">-->
-                <!--                            Aylık 1450 TL' den başlayan fiyatlarla...-->
-                <!--                          </p>-->
-
-                <!--                          <p class="card-text freeheight cardaciklama">-->
-                <!--                            Farklı sektörlerden profesyonellerle çalışarak,-->
-                <!--                            ortak ofis ortamında çalışma masası ve sekreterlik-->
-                <!--                            hizmeti yeter...-->
-                <!--                          </p>-->
-                <!--                          <hr />-->
-
-                <!--                          <a-->
-                <!--                            href="/ortak-ofis"-->
-                <!--                            class="btn main_red-text d-flex justify-content-end z-depth-0 p-0 waves-effect waves-light"-->
-                <!--                          >-->
-                <!--                            <span>Detaylı İncele</span-->
-                <!--                            ><span-->
-                <!--                              ><i class="fa fa-chevron-right pl-2"></i-->
-                <!--                            ></span>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                    <div class="col-lg-6 col-md-6 col-sm-12">-->
-                <!--                      <div class="card card-personal mb-4 services-card">-->
-                <!--                        <div class="view cardimage">-->
-                <!--                          <img-->
-                <!--                            class="card-img-top"-->
-                <!--                            src="//www.eofis.com.tr/ass/img/hizmet/28-eofis-biz-uyeligi.jpg"-->
-                <!--                            alt="eOfis BİZ Üyeliği"-->
-                <!--                          />-->
-                <!--                          <a href="/eofis-biz-uyeligi">-->
-                <!--                            <div-->
-                <!--                              class="mask rgba-black-slight waves-effect waves-light"-->
-                <!--                            ></div>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-
-                <!--                        <div class="card-body">-->
-                <!--                          <a href="/eofis-biz-uyeligi" class="main_red-text">-->
-                <!--                            <div class="card-title">eOfis BİZ Üyeliği</div>-->
-                <!--                          </a>-->
-
-                <!--                          <p class="card-meta font-weight-bold">-->
-                <!--                            Aylık 0 TL' den başlayan fiyatlarla...-->
-                <!--                          </p>-->
-
-                <!--                          <p class="card-text freeheight cardaciklama">-->
-                <!--                            Üyeler, eOfis’in tüm paylaşımlı ofisleri ile lounge-->
-                <!--                            ve cafe alanlarını kişi bazında indirim uygulanmış-->
-                <!--                            ücret ola...-->
-                <!--                          </p>-->
-                <!--                          <hr />-->
-
-                <!--                          <a-->
-                <!--                            href="/eofis-biz-uyeligi"-->
-                <!--                            class="btn main_red-text d-flex justify-content-end z-depth-0 p-0 waves-effect waves-light"-->
-                <!--                          >-->
-                <!--                            <span>Detaylı İncele</span-->
-                <!--                            ><span-->
-                <!--                              ><i class="fa fa-chevron-right pl-2"></i-->
-                <!--                            ></span>-->
-                <!--                          </a>-->
-                <!--                        </div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                  </div>-->
-                <!--                </div>-->
               </div>
             </div>
           </div>
           <div v-if="!isMobile" class="col-12 col-lg-5">
             <form
+              @submit.prevent="sendEmail"
               ref="form"
               class="border position-absolute rounded-4 bg-light p-3"
-              style="top: 30vh; width: 35%"
+              style="top: 30vh; width: 35vw; right: 5vw"
             >
-              <h3 class="text-center text-danger">Teklif Formu</h3>
-              <div class="col-6 col-md-6">
-                <label for="inputEmail4" class="form-label">Ad</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-              </div>
-              <div class="col-6 col-md-6">
-                <label for="inputPassword4" class="form-label">Soyad</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword4"
-                />
-              </div>
-              <div class="col-6">
-                <label for="inputAddress" class="form-label">Telefon</label>
+              <h3 class="text-center text-danger mb-4">
+                {{ sendForm.quotationForm }}
+              </h3>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-person-fill"></i
+                ></span>
                 <input
                   type="text"
                   class="form-control"
-                  id="inputAddress"
-                  placeholder=""
+                  v-model="sendForm.name"
+                  :placeholder="form.name"
+                  name="user_name"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  required
                 />
               </div>
-              <div class="col-6">
-                <label for="inputAddress2" class="form-label">Eposta</label>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-phone-fill"></i
+                ></span>
                 <input
                   type="text"
                   class="form-control"
-                  id="inputAddress2"
-                  placeholder=""
+                  v-model="sendForm.phone"
+                  :placeholder="form.phone"
+                  name="user_phone"
+                  aria-label="Phone"
+                  aria-describedby="basic-addon1"
+                  required
                 />
               </div>
-              <div class="col-12">
-                <label for="inputCity" class="form-label">Mesajiniz</label>
-                <input type="text" class="form-control" id="inputCity" />
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="bi bi-envelope-fill"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  v-model="sendForm.email"
+                  :placeholder="form.email"
+                  name="user_email"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                  required
+                />
               </div>
-              <div class="col-12">
-                <label for="inputState" class="form-label">Hizmet Secin</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
+
+              <select
+                class="form-select mb-3"
+                v-model="sendForm.service"
+                name="service"
+                aria-label="Default select example"
+                required
+              >
+                <option disabled value="">
+                  {{ $t("form.selectAService") }}
+                </option>
+                <option value="Flexible Office">
+                  {{ $t("keywords.flexibleOffice") }}
+                </option>
+                <option value="Virtual Office">
+                  {{ $t("keywords.virtualOffice") }}
+                </option>
+                <option value="Coworking Office">
+                  {{ $t("keywords.coworkingOffice") }}
+                </option>
+              </select>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text"
+                  ><i class="bi bi-chat-left-text-fill"></i
+                ></span>
+                <textarea
+                  class="form-control"
+                  v-model="sendForm.message"
+                  :placeholder="form.message + '...'"
+                  name="message"
+                  aria-label="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-check form-switch mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                  v-model="sendForm.companyCheck"
+                  name="company_check"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault">{{
+                  $t("form.company")
+                }}</label>
               </div>
               <div
-                class="col-12 d-flex align-items-center justify-content-center"
+                v-if="formStatus === 'success'"
+                class="alert alert-success"
+                role="alert"
               >
-                <button
-                  type="submit"
-                  class="btn btn-danger rounded-0 mx-auto"
-                  data-bs-dismiss="modal"
-                >
-                  Teklif Al
+                {{ formMessage }}
+              </div>
+
+              <!-- Hata Mesajı -->
+              <div
+                v-if="formStatus === 'error'"
+                class="alert alert-danger"
+                role="alert"
+              >
+                {{ formMessage }}
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-danger">
+                  {{ $t("keywords.getAnOffer")
+                  }}<i class="bi bi-file-text-o ml-2"></i>
                 </button>
               </div>
             </form>
@@ -491,6 +435,13 @@ export default {
 }
 .sticky {
   position: fixed !important;
-  top: 75px !important;
+  top: 95px !important;
+}
+.fixed-to-bottom {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 0;
+  right: 0 !important;
+  width: -webkit-fill-available;
 }
 </style>

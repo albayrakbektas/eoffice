@@ -7,6 +7,11 @@ export default {
       imageContentAnimation: "",
     };
   },
+  computed: {
+    heroActivity() {
+      return this.$t("sections.heroActivity");
+    },
+  },
   mounted() {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
@@ -30,9 +35,7 @@ export default {
       >
         <div
           class="full_back_image"
-          style="
-            background-image: url('//www.eofis.com.tr/ass/img/eventler.webp');
-          "
+          style="background-image: url('/img/toplanti_1.jpeg')"
         ></div>
       </div>
       <div
@@ -44,20 +47,15 @@ export default {
           class="anasayfa_spec_right white-text py-3 py-lg-5 pl-3 pl-sm-5 mb-3-mb-lg-5 text-sm-left text-center"
         >
           <h2 class="mt-3 mt-lg-5 mb-4 h3-responsive">
-            Etkinliklere Katılarak Hem İş Yapın, Hem de Eğlenerek Sosyalleşin
+            {{ heroActivity.title }}
           </h2>
-          <p>
-            Birçok sosyal buluşma, eğitimler ve çalışma atölyeleri düzenleyerek
-            sosyalleşmeyi de unutmayın. Farklı firmalar tarafından düzenlenen
-            etkinliklerden haberdar olarak, kendinizi geliştirebilir, ilgi
-            alanlarınızın kesiştiği yeni insanlarla bir araya gelerek
-            sosyalleşebilir, böylelikle çevrenizi genişletebilme ve işinizi
-            büyütme fırsatlarından yararlanabilirsiniz.
+          <p style="color: #fff !important">
+            {{ heroActivity.content }}
           </p>
-          <p>
-            Hem iş hem eğlence konseptli organizasyonlarla motivasyonumuz tam,
-            işe devam.
-          </p>
+          <!--          <p style="color: #fff !important">-->
+          <!--            Hem iş hem eğlence konseptli organizasyonlarla motivasyonumuz tam,-->
+          <!--            işe devam.-->
+          <!--          </p>-->
         </div>
       </div>
     </div>
