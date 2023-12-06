@@ -287,17 +287,35 @@
     }
   },
   "homeCoverCards": {
+    "cover": {
+      "title": "İş Dünyasının Yeni Çağında Yerinizi Alın",
+      "content": "Modern ve yenilikçi ofis çözümlerimizle işinizi bir adım öne taşıyın. Esnek çalışma alanlarımızda verimliliğinizi artırın. Başarınız için ihtiyacınız olan her şey burada"
+    },
+    "textCarousel": [
+      {
+        "title": "Sanal Ofis",
+        "description": "Profesyonel iş imajınızı sanal ofisimizle daha da güçlendirin. Teknolojiyle donatılmış sanal alanlarımızda, işlerinizi her yerden yönetin. Prestijli bir iş adresi edinin ve işinizi yeni zirvelere taşıyın."
+      },
+      {
+        "title": "Hazır Ofis ",
+        "description": "Hazır ofis çözümlerimizle işinize hız kazandırın. Modern tasarımlı ofislerimizde konfor ve verimliliği bir arada yaşayın. Hemen taşının ve işinize odaklanın; geri kalan her şey bizim sorumluluğumuzda."
+      },
+      {
+        "title": "Ortak Ofis",
+        "description": "Ortak ofis alanlarımızda yenilikçi bir çalışma ortamını keşfedin. İşbirliği ve yaratıcılığı teşvik eden bu dinamik ortamda yeni fırsatlar yaratın. Ağınızı genişletin ve benzersiz bir çalışma deneyimi yaşayın."
+      }
+    ],
     "virtualOffice": {
       "title": "Sanal Ofis",
-      "subtitle": "Ofisiniz nerede isterseniz orada!"
+      "subtitle": "Profesyonel iş imajınızı sanal ofisimizle güçlendirin."
     },
     "flexibleOffice": {
       "title": "Hazır Ofis",
-      "subtitle": "Resmi işlemler için ihtiyacınız olan adres"
+      "subtitle": "Hazır ofis çözümlerimizle hemen işe başlayın."
     },
     "coworkingOffice": {
       "title": "Paylaşımlı Ofis",
-      "subtitle": "Dilediğin zaman dilediğin yerde çalış"
+      "subtitle": "Ortak ofis alanlarımızda çalışma ortamını keşfedin."
     }
   },
   "form": {

@@ -5,6 +5,9 @@ export default {
     isMobile() {
       return this.$store.getters.isMobile;
     },
+    homeCover() {
+      return this.$t("homeCoverCards");
+    },
   },
 };
 </script>
@@ -15,25 +18,49 @@ export default {
     class="cover-container d-flex p-3 mx-auto flex-column"
   >
     <main class="px-3">
-      <div
-        :class="isMobile ? 'main-top-mobile' : ''"
-        class="main-top bg-white bg-opacity-50"
-      >
-        <h1>Cover your page.</h1>
+      <div :class="isMobile ? 'main-top-mobile' : ''" class="main-top">
+        <h1>{{ homeCover.cover.title }}</h1>
         <p class="lead fw-bold fs-6">
-          Cover is a one-page template for building simple and beautiful home
-          pages. Download, edit the text, and add your own fullscreen background
-          photo to make it your own.
+          {{ homeCover.cover.content }}
         </p>
       </div>
       <div class="row" v-if="!isMobile" style="translate: 0 50vh; height: 45vh">
-        <div class="col-4 my-auto bg-white bg-opacity-50">
-          <h1>Cover your page.</h1>
-          <p class="lead fw-bolder fs-6">
-            Cover is a one-page template for building simple and beautiful home
-            pages. Download, edit the text, and add your own fullscreen
-            background photo to make it your own.
-          </p>
+        <div class="col-4 my-auto bg-black bg-opacity-25">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="text-white mb-0 fw-bolder">
+                  {{ homeCover.textCarousel[0].title }}
+                </h1>
+                <hr class="text-white fw-bolder border-3 p-0 mt-0" />
+                <p class="lead text-white fw-bold fs-6">
+                  {{ homeCover.textCarousel[0].description }}
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h1 class="text-white mb-0 fw-bolder">
+                  {{ homeCover.textCarousel[1].title }}
+                </h1>
+                <hr class="text-white fw-bolder border-3 p-0 mt-0" />
+                <p class="lead text-white fw-bolder fs-6">
+                  {{ homeCover.textCarousel[1].description }}
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h1 class="text-white mb-0 fw-bolder">
+                  {{ homeCover.textCarousel[2].title }}
+                </h1>
+                <hr class="text-white fw-bolder border-3 p-0 mt-0" />
+                <p class="lead text-white fw-bolder fs-6">
+                  {{ homeCover.textCarousel[2].description }}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row col-8">
           <div class="col-4 p-3">
@@ -67,7 +94,10 @@ export default {
                 style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">
+                <h5
+                  class="card-title fw-bolder"
+                  style="color: rgba(13, 60, 85, 1)"
+                >
                   {{ $t("homeCoverCards.virtualOffice.title") }}
                 </h5>
                 <p class="card-text">
@@ -109,20 +139,6 @@ export default {
         class="main-bot d-flex justify-content-between"
         style="max-height: 45vh; width: 65vw"
       ></div>
-      <!--      <div class="grey-card-container w-100 row mx-auto" v-if="isMobile">-->
-      <!--        <div class="col-3">-->
-      <!--          <GreyInfoCard />-->
-      <!--        </div>-->
-      <!--        <div class="col-3">-->
-      <!--          <GreyInfoCard />-->
-      <!--        </div>-->
-      <!--        <div class="col-3">-->
-      <!--          <GreyInfoCard />-->
-      <!--        </div>-->
-      <!--        <div class="col-3">-->
-      <!--          <GreyInfoCard />-->
-      <!--        </div>-->
-      <!--      </div>-->
     </main>
   </div>
 </template>
@@ -141,18 +157,21 @@ export default {
 .main-top {
   position: absolute;
   left: 50%;
-  top: 20%;
-  translate: -50% 20%;
+  top: 15%;
+  translate: -50% 15%;
   text-align: center;
 }
 .main-top-mobile {
-  top: 40%;
+  top: 27.5%;
   left: 50%;
   translate: -50% 12.5%;
-  width: 80%;
-  padding: 1%;
+  width: 90%;
+  padding: 1% 4%;
+  background-color: rgb(240, 240, 240, 0.5) !important;
   h1 {
     font-size: 135%;
+    font-weight: bolder;
+    margin-top: 0.5rem;
   }
   p {
     font-size: 85%;

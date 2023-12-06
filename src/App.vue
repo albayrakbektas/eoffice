@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
 
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 400;
   color: #263238;
   font-size: 0.9rem;
@@ -24,7 +24,7 @@ body {
 #app {
   overflow-x: hidden;
   max-width: 100vw;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

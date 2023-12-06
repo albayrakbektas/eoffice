@@ -289,17 +289,35 @@
     }
   },
   "homeCoverCards": {
+    "cover": {
+      "title": "Embrace the New Era of Business",
+      "content": "Advance your business with our modern and innovative office solutions. Increase your productivity in our flexible workspaces. Everything you need for success is right here"
+    },
+    "textCarousel": [
+      {
+        "title": "Virtual Office",
+        "description": "Enhance your professional business image further with our virtual office. Manage your business from anywhere with our technology-equipped virtual spaces. Acquire a prestigious business address and elevate your business to new heights."
+      },
+      {
+        "title": "Flexible Office",
+        "description": "Accelerate your business with our ready office solutions. Experience comfort and efficiency in our modernly designed offices. Move in immediately and focus on your work; we take care of everything else."
+      },
+      {
+        "title": "Co-working",
+        "description": "Discover an innovative working environment in our co-working spaces. Foster collaboration and creativity in this dynamic setting to create new opportunities. Expand your network and experience a unique working experience."
+      }
+    ],
     "virtualOffice": {
       "title": "Virtual Office",
-      "subtitle": "Your office wherever you want it!"
+      "subtitle": "Enhance your professional business image with our virtual office."
     },
     "flexibleOffice": {
       "title": "Flexible Office",
-      "subtitle": "The address you need for official procedures"
+      "subtitle": "Start working immediately with our ready office solutions."
     },
     "coworkingOffice": {
       "title": "Coworking",
-      "subtitle": "Work whenever and wherever you want"
+      "subtitle": "Discover the working environment in our co-working spaces."
     }
   },
   "form": {
