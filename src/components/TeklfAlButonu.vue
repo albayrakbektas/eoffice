@@ -58,6 +58,7 @@ export default {
     <button
       type="button"
       class="btn btn-danger mb-2 mx-2 fixed-bottom"
+      style="z-index: 999"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
@@ -78,7 +79,7 @@ export default {
           <div class="modal-header d-block text-center">
             <img
               src="/img/siteLogo.jpeg"
-              style="height: 70px; width: 70px; border-radius: 50%"
+              style="height: 65px; width: 65px; border-radius: 50%"
               alt="Site Logo"
             />
             <button

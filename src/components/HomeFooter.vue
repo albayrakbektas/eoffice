@@ -27,9 +27,7 @@ export default {
             style="width: 15rem; color: rgba(0, 123, 255, 1)"
           />
           <p style="color: rgba(50, 50, 50, 1) !important">
-            Akdeniz Business Center, girişimcilere, serbest meslek
-            çalışanlarına, kobilere ve kurumsal firmalara, 2020'den bu yana
-            çalışma alanları çözümleri sunuyor
+            {{ $t("footer.companyDescription") }}
           </p>
         </div>
 

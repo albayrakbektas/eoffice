@@ -73,7 +73,7 @@ export default {
       <div class="dc_img">
         <img
           src="/img/siteLogo.jpeg"
-          style="height: 70px; width: 70px; border-radius: 50%"
+          style="height: 65px; width: 65px; border-radius: 50%"
           alt="Site Logo"
         />
       </div>
@@ -90,24 +90,29 @@ export default {
         </div>
       </a>
       <!-- Mobile Call Button -->
-      <a
-        class="navbar-brand mobile_call mx-auto d-lg-none callusbuton"
-        href="tel:0537 600 1153"
-      >
-        <div class="dc_oth" style="margin-left: 40px">
-          <div class="dc_img d-flex align-items-center justify-content-center">
-            <i class="bi bi-telephone fs-6 text-danger"></i>
-            <div class="dc_txt fs-6 mx-auto">{{ $t("keywords.callNow") }}</div>
+      <!--      <a-->
+      <!--        class="navbar-brand mobile_call mx-auto d-lg-none callusbuton"-->
+      <!--        href="tel:0537 600 1153"-->
+      <!--      >-->
+      <!--        <div class="dc_oth" style="margin-left: 40px">-->
+      <!--          <div class="dc_img d-flex align-items-center justify-content-center">-->
+      <!--            <i class="bi bi-telephone fs-6 text-danger"></i>-->
+      <!--            <div class="dc_txt fs-6 mx-auto">{{ $t("keywords.callNow") }}</div>-->
+      <!--          </div>-->
+      <!--          <div class="dc_nmr text-danger fs-6 text-center fw-bold">-->
+      <!--            05376001153-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </a>-->
+      <div class="nav-item btn btn-danger d-md-none" style="margin-left: 10%">
+        <a class="nav-link p-0" href="tel:0537 600 1153">
+          <div class="">
+            <div class="mx-auto text-white fw-bold">
+              {{ keywords.callNow }}
+            </div>
           </div>
-          <div class="dc_nmr text-danger fs-6 text-center fw-bold">
-            05376001153
-          </div>
-        </div>
-      </a>
-      <!-- Navbar Toggler -->
-      <!--      <button class="navbar-toggler" type="button" @click="toggleNavbar">-->
-      <!--        <span class="navbar-toggler-line" v-for="i in 3" :key="i"></span>-->
-      <!--      </button>-->
+        </a>
+      </div>
       <button
         v-if="isMobile"
         class="navbar-toggler d-lg-flex col-lg-3 justify-content-end"
@@ -127,16 +132,19 @@ export default {
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
-        <div class="offcanvas-header">
+        <div
+          class="offcanvas-header h-25 align-items-start"
+          style="background-image: url('/img/mersin_sahil.jpeg')"
+        >
           <!--          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>-->
           <img
             src="/img/siteLogo.jpeg"
-            style="height: 70px; width: 70px; border-radius: 50%"
+            style="height: 120px; width: 120px; align-self: center"
             alt="Site Logo"
           />
           <button
             type="button"
-            class="btn-close"
+            class="btn-close fw-bolder fs-4"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
@@ -224,6 +232,24 @@ export default {
               </a>
             </li>
           </ul>
+          <div class="row my-4">
+            <div class="col-6">
+              <button
+                class="btn btn-danger w-100"
+                @click="changeLanguage('tr')"
+              >
+                Türkçe
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                class="btn btn-danger w-100"
+                @click="changeLanguage('en')"
+              >
+                English
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Navbar Collapse -->
