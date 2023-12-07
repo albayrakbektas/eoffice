@@ -245,7 +245,7 @@
       }
     },
     "heroPlazaCount": {
-      "title": "58 A+ Plazada Prestijli Ofisler",
+      "title": "A+ Plazada Prestijli Ofisler",
       "content": "Esnek Kiralama Modeli ile, saatlik, günlük, haftalık ya da aylık kiralamalar yapabilir, Türkiyen'nin en prestijli lokasyonlarında, işinize uygun toplantı odası, seminer salonu, hazır ofis ya da ortak ofiste çalışma masası imkanlarından faydalanabilirsiniz."
     },
     "heroShareNetwork": {
@@ -257,8 +257,8 @@
       "content": "Birçok sosyal buluşma, eğitimler ve çalışma atölyeleri düzenleyerek sosyalleşmeyi de unutmayın. Farklı firmalar tarafından düzenlenen etkinliklerden haberdar olarak, kendinizi geliştirebilir, ilgi alanlarınızın kesiştiği yeni insanlarla bir araya gelerek sosyalleşebilir, böylelikle çevrenizi genişletebilme ve işinizi büyütme fırsatlarından yararlanabilirsiniz.\n\nHem iş hem eğlence konseptli organizasyonlarla motivasyonumuz tam, işe devam."
     },
     "heroCall": {
-      "title": "Çağrı Karşılama ve Aktarma Hizmetinden Faydalanın",
-      "content": "Size özel telefon ve hat tahsisi yaptırarak, sekretarya hizmetinden faydalanabilir, gelen aramaları aktarılmasını sağlayabilir, ofisinize gelen posta ve kargolarınızın takibini yapabilirsiniz."
+      "title": "Profesyonel Çağrı Yönetimi Hizmetiyle İşinizi Kolaylaştırın",
+      "content": "Kişiselleştirilmiş telefon hattı ve sekretarya hizmetlerimizle iletişiminizi güçlendirin. Gelen aramalarınızı istediğiniz yere aktararak, iş akışınızı kesintisiz sürdürün. Ayrıca, ofisinize ulaşan posta ve kargolarınızı etkin bir şekilde takip ederek, önemli gönderilerinizi kaçırmayın."
     },
     "heroActivityPlace": {
       "title": "Özel Etkinlikleriniz İçin Mükemmel Mekan Seçenekleri",
@@ -267,7 +267,6 @@
     "whyAbc": {
       "title": "Neden Akdeniz Business Center?",
       "listLeft": [
-        "Sektörde 2 Yıllık Tecrübe",
         "Sadece A+ Prestijli Plazalar",
         "Sürekli Artan Lokasyon Ağı",
         "Tek Sözleşmeyle Tüm Lokasyonları Kullanma İmkanı",
@@ -277,11 +276,10 @@
       ],
       "listRight": [
         "Sürpriz Ücret Yok",
-        "Metro ve Metrobüs ile Kolay Ulaşım",
-        "Mobil Uygulama ile Ofis Yönetimi",
+        "Otobüs ile Kolay Ulaşım",
         "Gelişmiş Çağrı Sistemi",
         "Şeffaf Yönetim",
-        "120 Adet Toplantı ve Seminer Salonu",
+        "20 Adet Toplantı ve Seminer Salonu",
         "Lansman Alanları"
       ]
     }

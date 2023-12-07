@@ -24,6 +24,9 @@ export default {
     form() {
       return this.$t("form");
     },
+    isMobile() {
+      return this.$store.getters.isMobile;
+    },
   },
   methods: {
     sendEmail() {
@@ -55,14 +58,82 @@ export default {
   <section class="py-3 py-lg-5 mb-3 mb-lg-5" style="visibility: visible">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-8 pt-sm-5 pt-lg-0 flex-center">
-          <img
-            src="//www.eofis.com.tr/ass/img/ozellikler2.webp"
-            alt="eOfis"
-            class="z-depth-0 img-fluid"
-            width="730"
-            height="427"
-          />
+        <div
+          class="row col-12 col-sm-6 col-lg-8 pt-sm-5 pt-lg-0 flex-center align-items-center"
+        >
+          <!--          <img-->
+          <!--            src="//www.eofis.com.tr/ass/img/ozellikler2.webp"-->
+          <!--            alt="eOfis"-->
+          <!--            class="z-depth-0 img-fluid"-->
+          <!--            width="730"-->
+          <!--            height="427"-->
+          <!--          />-->
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-worldwide-location.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-online-support.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-phone.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <img
+              class="w-50"
+              :style="isMobile ? 'width: 33.3% !important' : ''"
+              src="/icons/icons8-mailbox.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <img
+              class="w-50"
+              :style="isMobile ? 'width: 33.3% !important' : ''"
+              src="/icons/icons8-community.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-wifi.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-cup.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
+          <div class="col-4 col-md-3 text-center">
+            <img
+              class="w-50"
+              src="/icons/icons8-floor-scrubber.gif"
+              alt="worldwide location"
+            />
+            <div class="mt-2 mb-4">icon aciklama</div>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-4 d-lg-none mobile_ozellikler2">

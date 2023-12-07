@@ -72,7 +72,10 @@ export default {
                 style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">
+                <h5
+                  class="card-title fw-bolder"
+                  style="color: rgba(13, 60, 85, 1)"
+                >
                   {{ $t("homeCoverCards.flexibleOffice.title") }}
                 </h5>
                 <p class="card-text">
@@ -119,7 +122,10 @@ export default {
                 style="height: 20vh"
               />
               <div class="card-body">
-                <h5 class="card-title">
+                <h5
+                  class="card-title fw-bolder"
+                  style="color: rgba(13, 60, 85, 1)"
+                >
                   {{ $t("homeCoverCards.coworkingOffice.title") }}
                 </h5>
                 <p class="card-text">

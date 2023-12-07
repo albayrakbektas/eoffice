@@ -39,25 +39,25 @@ export default {
         <img
           src="/img/avatar_call_center.jpeg"
           alt="avatar_call_center"
-          class="img-fluid col-6 object-fit-cover"
+          class="img-fluid col-6 object-fit-cover mb-2"
           style="border-radius: 50%; height: 10rem; width: 10rem"
         />
         <img
           src="/img/avatar_meeting.jpeg"
           alt="avatar_meeting"
-          class="img-fluid col-6 object-fit-cover"
+          class="img-fluid col-6 object-fit-cover mb-2"
           style="height: 10rem; width: 10rem"
         />
         <img
           src="/img/avatar_office_room.jpeg"
           alt="avatar_office_room"
-          class="img-fluid col-6 object-fit-cover"
+          class="img-fluid col-6 object-fit-cover mt-2"
           style="height: 10rem; width: 10rem"
         />
         <img
           src="/img/avatar_office_network.jpeg"
           alt="avatar_office_network"
-          class="img-fluid col-6 object-fit-cover"
+          class="img-fluid col-6 object-fit-cover mt-2"
           style="border-radius: 50%; height: 10rem; width: 10rem"
         />
       </div>

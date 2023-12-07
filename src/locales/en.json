@@ -247,7 +247,7 @@
       }
     },
     "heroPlazaCount": {
-      "title": "Prestigious Offices in 58 A+ Plazas",
+      "title": "Prestigious Offices in A+ Plazas",
       "content": "With our Flexible Rental Model, you can rent hourly, daily, weekly, or monthly, and take advantage of meeting rooms, seminar halls, ready offices, or coworking desks in Turkey's most prestigious locations."
     },
     "heroShareNetwork": {
@@ -259,8 +259,8 @@
       "content": "Don't forget to socialize by attending various social gatherings, trainings, and workshops. Stay informed about events organized by different companies. You can develop yourself, meet new people with shared interests, expand your network, and seize opportunities to grow your business. With both work and fun-themed events, we stay motivated and continue to work."
     },
     "heroCall": {
-      "title": "Benefit from Call Answering and Forwarding Services",
-      "content": "By getting a dedicated phone line and number, you can take advantage of secretarial services, ensure the forwarding of incoming calls, and keep track of your mail and parcels arriving at your office."
+      "title": "Simplify Your Business with Professional Call Management Services",
+      "content": "Strengthen your communication with personalized phone lines and secretarial services. Effortlessly redirect incoming calls to maintain a seamless workflow. Plus, effectively track your office mail and parcels, ensuring you never miss important deliveries."
     },
     "heroActivityPlace": {
       "title": "Perfect Venues for Your Special Events",
@@ -269,7 +269,6 @@
     "whyAbc": {
       "title": "Why Akdeniz Business Center?",
       "listLeft": [
-        "2 Years of Experience in the Industry",
         "Only A+ Prestigious Plazas",
         "Continuously Expanding Location Network",
         "Access to All Locations with a Single Contract",
@@ -279,8 +278,7 @@
       ],
       "listRight": [
         "No Hidden Fees",
-        "Easy Access with Metro and Metrobus",
-        "Office Management via Mobile App",
+        "Easy Access with Bus",
         "Advanced Call System",
         "Transparent Management",
         "120 Meeting and Seminar Halls",
